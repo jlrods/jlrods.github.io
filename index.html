@@ -1,20 +1,52 @@
 ﻿<!DOCTYPE html>
-<html>
+<html >
 <head>
-    <title></title>
+    <title>jlrods.com</title>
 	<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet_Main.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
-<body>
-    <header> Menu</header>
-    <img src="IronMan1.jpg" style="height:75px; width:100px"/>
+<body ng-app="menuApp">
+    <header>
+    </header>
+    <div ng-controller="MenuController">
+        <h1>{{text}}</h1>
+        <div class="menu">
+            <div ng-repeat="submenu in subMenus">
+                <menu-item class="subMenu" item="submenu"></menu-item>
+            </div>
+        </div>
+        
+    </div>
+    
+    
     <article>
+        
         <h1>A nice heading here</h1>
-        <p>some text</p>
+        <p id="testP">some text</p>
         <a href="About.html">A link to anther page</a>
     </article>
 
     <footer>
         <p>Something interesting here</p>
+        <div class="social-networks">
+            <a href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="facebook.png" class="social-network-icon"/></a>
+            <a href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="instagram.png" class="social-network-icon"/></a>
+            <a href="https://plus.google.com/109593661578426784429"><img id="googlePlus" src="googleplus.png" class="social-network-icon"/></a>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-leonardo-rodr%C3%ADguez-3069a55b?trk=nav_responsive_tab_profile"><img id="linkedIn" src="linkedin.png" class="social-network-icon"/></a>
+            <a href="https://github.com/jlrods"><img id="gitHub" src="github.png" class="social-network-icon"/></a>
+        </div>
     </footer>
+    <!-- Modules -->
+    <script src="MenuApp.js"></script>
+    <!-- Controllers -->
+    <script src="MenuAppController.js"></script>
+    <!-- Directives -->
+    <script src="menuItem.js"></script>
+
+    <script type='text/javascript' src="Interactive-SocialNetworks.js"></script>
+    <script type='text/javascript' src="Interactive-Menu.js"></script>
+
 </body>
 </html>
