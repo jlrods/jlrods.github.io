@@ -5,6 +5,14 @@
 	<meta charset="utf-8" />
 </head>
 <body>
+   <div ng-controller="MenuController">
+        <h1>{{text}}</h1>
+        <div class="menu">
+            <div ng-repeat="submenu in subMenus">
+                <menu-item class="subMenu" item="submenu"></menu-item>
+            </div>
+        </div>
+    </div>
     <p>Testing multiple page in github</p>
 </body>
 </html>
