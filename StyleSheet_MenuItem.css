@@ -1,0 +1,45 @@
+﻿body {
+}
+
+a {
+    text-decoration:none;
+    color:black
+}
+
+p {
+    margin-top:5px;
+    text-align:center;
+}
+.subMenu {
+    margin-left: 20px;
+    float: left;
+    width: 100px;
+    height:45px;
+    padding-bottom:5px;
+}
+
+    .subMenu:hover {
+        background-color:#ffffff;
+        color: white;
+        border-radius:5px;
+    }
+        .subMenu:hover .subMenuLine {
+            background-color:#e65c00;
+            border-top-left-radius:25px;
+            border-top-right-radius:25px;
+        }
+        .subMenu:hover a {
+            color:#e65c00;
+            font-weight:bold;
+        }
+.subMenuLine {
+    height:5px;
+}
+
+.menuIcon {
+    padding-top:3px;
+    height:20px;
+    width:20px;
+    margin:auto;
+    display:block;
+}
