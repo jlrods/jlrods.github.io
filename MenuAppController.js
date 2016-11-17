@@ -26,6 +26,7 @@
             templateUrl: 'ContactMe.html'
         }
     ];//End of array of data
-    $scope.text = 'Jose Leonardo'
+    $scope.text = 'Jose Leonardo';
+    $scope.url = 'header.html';
     }
 ]);//End of menu controller definition

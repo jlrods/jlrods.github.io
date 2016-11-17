@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body ng-app="menuApp">
+    <div ng-controller="MenuController">
+        <div class="menu">
+            <div ng-repeat="submenu in subMenus">
+                <menu-item item="submenu"></menu-item>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
