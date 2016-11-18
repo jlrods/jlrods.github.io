@@ -11,6 +11,8 @@
                     break;
                 case "instagram.png":
                     newIcon = "instagram-black.png";
+                    $(this).width('-=8px').height('-=8px').css('paddingBottom', '+=4px').css('paddingLeft','+=4px');
+                    $('#googlePlus').css('marginLeft','+=4px');
                     break;
                 case "googleplus.png":
                     newIcon = "googleplus-black.png";
@@ -34,6 +36,8 @@
                     break;
                 case "instagram-black.png":
                     newIcon = "instagram.png";
+                    $(this).width('+=8px').height('+=8px').css('paddingBottom', '-=4px').css('paddingLeft', '-=4px');
+                    $('#googlePlus').css('marginLeft', '-=4px');
                     break;
                 case "googleplus-black.png":
                     newIcon = "googleplus.png";
