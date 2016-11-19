@@ -7,7 +7,7 @@
 
 header {
     padding:0px;
-    margin: 0px;
+    margin-top: 0px;
     background-image: url(Header2.png);
     background-size: cover;
     height:278px;
@@ -24,30 +24,14 @@ header {
     top: 0;
 }
 
-.subMenu {
-    margin-left: 20px;
-    float: left;
-    width: 100px;
-    height:45px;
-}
-
-    .subMenu:hover {
-        background-color:#ccccb3;
-        text-decoration-color: white;
-    }
-
-.menuIcon {
-    height:10px;
-    width:10px;
-}
 
 .social-networks {
-    padding:10px;
+    padding:15px;
     margin: 20px;
 }
 
 .social-network-icon {
     height:50px;
     width:50px;
-    padding:10px;
+    padding:14px;
 }

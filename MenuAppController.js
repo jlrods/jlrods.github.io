@@ -2,25 +2,31 @@
     $scope.subMenus = [
         {
             title: 'Home',
-            icon: 'home.png'
+            icon: 'home.png',
+            templateUrl: 'index.html'
         },
         {
             title: 'Education',
-            icon: 'education.png'
+            icon: 'education.png',
+            templateUrl: 'Education.html'
         },
         {
             title: 'Career',
             icon: 'career.png',
+            templateUrl: 'Career.html'
         },
         {
             title: 'My Interests',
-            icon: 'interests.png'
+            icon: 'interests.png',
+            templateUrl: 'MyInterests.html'
         },
         {
             title: 'Contact me',
-            icon: 'contact.png'
+            icon: 'contact.png',
+            templateUrl: 'ContactMe.html'
         }
     ];//End of array of data
-    $scope.text = 'Jose Leonardo'
+    $scope.text = 'Jose Leonardo';
+    $scope.url = 'header.html';
     }
 ]);//End of menu controller definition

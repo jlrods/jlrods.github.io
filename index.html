@@ -2,23 +2,15 @@
 <html >
 <head>
     <title>www.jlrods.com</title>
-	<meta charset="utf-8" />
+	<met a charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="StyleSheet_Main.css"/>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body ng-app="menuApp">
-    <header>
+    <header ng-controller="MenuController">
+        <div class="menu" ng-include src="url"></div>
     </header>
-    <div ng-controller="MenuController">
-        <h1>{{text}}</h1>
-        <div class="menu">
-            <div ng-repeat="submenu in subMenus">
-                <menu-item class="subMenu" item="submenu"></menu-item>
-            </div>
-        </div>
-        
-    </div>
     
     
     <article>
@@ -31,11 +23,11 @@
     <footer>
         <p>Something interesting here</p>
         <div class="social-networks">
-            <a href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="facebook.png" class="social-network-icon"/></a>
-            <a href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="instagram.png" class="social-network-icon"/></a>
-            <a href="https://plus.google.com/109593661578426784429"><img id="googlePlus" src="googleplus.png" class="social-network-icon"/></a>
-            <a href="https://www.linkedin.com/in/jos%C3%A9-leonardo-rodr%C3%ADguez-3069a55b?trk=nav_responsive_tab_profile"><img id="linkedIn" src="linkedin.png" class="social-network-icon"/></a>
-            <a href="https://github.com/jlrods"><img id="gitHub" src="github.png" class="social-network-icon"/></a>
+            <a id="aFacebook" href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="facebook.png" class="social-network-icon"/></a>
+            <a id="aInstagram" href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="instagram.png" class="social-network-icon"/></a>
+            <a id="aGooglePlus" href="https://plus.google.com/109593661578426784429"><img id="googlePlus" src="googleplus.png" class="social-network-icon"/></a>
+            <a id="aLinkedIn" href="https://www.linkedin.com/in/jos%C3%A9-leonardo-rodr%C3%ADguez-3069a55b?trk=nav_responsive_tab_profile"><img id="linkedIn" src="linkedin.png" class="social-network-icon"/></a>
+            <a id="aGitHub" href="https://github.com/jlrods"><img id="gitHub" src="github.png" class="social-network-icon"/></a>
         </div>
     </footer>
     <!-- Modules -->
