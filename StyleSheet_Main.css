@@ -51,6 +51,7 @@ header {
 
 .gallery {
     margin-top:20px;
+    display:block;
 }
 
 #homeGalleryImage {
@@ -58,4 +59,34 @@ header {
     margin:auto;
     height:300px;
     width: 400px;
+}
+
+.arrowContainer {
+    position:relative;
+    top:130px;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+}
+    .arrowContainer:hover {
+        background-color:black;
+    }
+.galleryArrow {
+    height:40px;
+    width:40px;
+    display:block;
+    margin:auto;
+}
+#forwardArrow {
+    left:500px;
+}
+
+#backwardArrow {
+    left:20px;
+    rotation: 180deg;
+}
+
+
+footer {
+    clear:left;
 }
