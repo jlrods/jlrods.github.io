@@ -1,5 +1,4 @@
 ﻿body {
-    background:url(Background5.jpg) no-repeat  center center fixed;
     background-size: cover;
     padding:0px;
     margin:0px;
@@ -15,8 +14,6 @@ header {
 }
 
 .menu {
-
-
     width:600px; 
     height:80px;
     position:absolute;
@@ -34,4 +31,31 @@ header {
     height:50px;
     width:50px;
     padding:14px;
+}
+
+.text {
+    margin:5px;
+    text-align:left;
+}
+
+.gallery {
+    margin-left:250px;
+    width:600px;
+    border-style:outset;
+    border-width: 10px;
+}
+
+.body-wrapper {
+    margin-left:20px;
+}
+
+.gallery {
+    margin-top:20px;
+}
+
+#homeGalleryImage {
+    display:block;
+    margin:auto;
+    height:300px;
+    width: 400px;
 }

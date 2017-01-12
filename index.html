@@ -12,15 +12,20 @@
         <div class="menu" ng-include src="url"></div>
     </header>
     
-    
-    <article>
-        <h1>Welcome!</h1>
-        <p id="testP">some text</p>
-        <a href="About.html">A link to anther page</a>
-    </article>
+    <div class="body-wrapper">
+        <article>
+            <h1>Welcome!</h1>
+            <p class="text">Welcome to www.jlrods.com, Jose Leonardo's personal website.</p>
+            <p class="text">You will find some interesting information about JL, details about my education,</p>
+            <p class="text">work experience, insterest, contact detials, social media and personal information.</p>
+        </article>
+        <div class="gallery">
+            <img id="homeGalleryImage" src="USB.jpeg" />
+        </div>
+    </div>
 
     <footer>
-        <p>Something interesting here</p>
+        <h1>Visit jlrod's social media!</h1>
         <div class="social-networks">
             <a id="aFacebook" href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="facebook.png" class="social-network-icon"/></a>
             <a id="aInstagram" href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="instagram.png" class="social-network-icon"/></a>
@@ -39,6 +44,7 @@
     <!--Interactive Social Media script-->
     <script type='text/javascript' src="Interactive-SocialNetworks.js"></script>
     <script type='text/javascript' src="Interactive-Menu.js"></script>
+    <!--Gallery script-->
 
 </body>
 </html>
