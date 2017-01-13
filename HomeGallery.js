@@ -98,7 +98,7 @@ function SelectCircleByPicture() {
 }
 //This function will trigger jquery funtions to change circle gallery images on the bottom to change 
 // when hover the circles to change the images as per user selection
-//$(document).ready(function () {
+$(document).ready(function () {
 //    var circleCollection = document.getElementsByClassName('galleryCircle');
 //    var circleSelected;
 //    for (i = 0; i < circleCollection.length ; i++) {
@@ -109,17 +109,22 @@ function SelectCircleByPicture() {
 //    }
 //    test = document.getElementById('footerHead');
 //    test.innerHTML =circleSelected;
-//    $(".galleryCircle").on({
-//        mouseenter: function () {
-//            $(this).attr('src', 'orange-circle.png');
-//        },//End of mouseenter function
-//        mouseleave: function () {       
-//            if ($(this).id !== circleSelected){
-//                $(this).attr('src', 'white-circle.png')
-//            }           
-//        },//End of mouseleave function
-//    })//End of on function for galleryCircle class
-//});//End of jquery ready function
+    $(".galleryCircle").on({
+        mouseenter: function () {
+            if (this.getAttribute('src') !== 'orange-circle.png') {
+                $(this).attr('src', 'black-circle.png');
+            } else {
+                test = document.getElementById('footerHead');
+                test.innerHTML = this.getAttribute('src');
+            }
+        },//End of mouseenter function
+       mouseleave: function () {       
+            if (this.getAttribute('src') == 'black-circle.png'){
+                $(this).attr('src', 'white-circle.png')
+            }           
+        }//End of mouseleave function
+   })//End of on function for galleryCircle class
+});//End of jquery ready function
 
 //Function to clear to white circles the whole set of circles
 function ClearCircleSet() {
