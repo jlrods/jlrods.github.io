@@ -42,7 +42,7 @@ header {
     width:1000px;
     position:absolute;
     left:50%;
-    top:300px;
+    top:250px;
     margin-left:-250px;
 }
 #welcomeText {
@@ -100,7 +100,22 @@ header {
     margin:auto;
 }
 
+#homeCircleContainer {
+    height:26px;
+    width:200px;
+    position: relative;
+    margin-left:440px;
+    margin-top:135px;
+}
 
+    #homeCircleContainer div table tr td {
+        padding: 5px;
+    }
+
+.galleryCircle {
+    height:20px;
+    width:20px;
+}
 
 footer {
     clear: left;

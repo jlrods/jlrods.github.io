@@ -21,13 +21,23 @@
         </article>
         <div class="gallery">
             <div id="forwardArrowCont" class="arrowContainer">
-                <img id="forwardArrow" class="galleryArrow" src="Arrow.png" />
+                <img id="forwardArrow" class="galleryArrow" src="Arrow.png" onclick="ChangePicture()"/>
             </div>
             <img id="homeGalleryImage" src="USB.jpeg" />
             <div id="backwardArrowCont" class="arrowContainer">
-                <img id="backwardArrow" class="galleryArrow" src="Arrow.png" />
+                <img id="backwardArrow" class="galleryArrow" src="Arrow.png" onclick="ChangePictureBackwards()"/>
             </div>
-            
+            <div id="homeCircleContainer">
+                <table>
+                    <tr>
+                        <td><img id="homeCircle1" class="galleryCircle" src="orange-circle.png"/></td>
+                        <td><img id="homeCircle2" class="galleryCircle" src="white-circle.png" /></td>
+                        <td><img id="homeCircle3" class="galleryCircle" src="white-circle.png" /></td>
+                        <td><img id="homeCircle4" class="galleryCircle" src="white-circle.png" /></td>
+                        <td><img id="homeCircle5" class="galleryCircle" src="white-circle.png" /></td>
+                    </tr>
+                </table>
+            </div>
         </div>
         
     </div>
@@ -53,6 +63,6 @@
     <script type='text/javascript' src="Interactive-SocialNetworks.js"></script>
     <script type='text/javascript' src="Interactive-Menu.js"></script>
     <!--Gallery script-->
-
+    <script type="text/javascript" src="HomeGallery.js"></script>
 </body>
 </html>
