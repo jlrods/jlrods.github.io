@@ -117,6 +117,15 @@ header {
     width:20px;
 }
 
+#homeGalleryCaption {
+    height:20px;
+    width: auto;
+    position:absolute;
+    top:370px;
+    margin-left:100px;
+
+}
+
 footer {
     clear: left;
     margin-left: 20px;

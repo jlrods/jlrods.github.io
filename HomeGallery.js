@@ -14,14 +14,19 @@ function ChangePicture() {
     // will be set up again.
     if (pic.src.match("USB")) {
         pic.src = "FrankHogan.jpeg";
+        ChangeLink("Frank Hogan Ltd (Ireland)", "http://www.frankhogan.ie/contentv3/");
     } else if (pic.src.match("FrankHogan")) {
         pic.src = "UNIMET.jpeg";
+        ChangeLink("Univesidad Metropolitana (Venezuela)", "http://www.unimet.edu.ve/");
     } else if (pic.src.match("UNIMET")) {
         pic.src = "Toyota.jpeg";
+        ChangeLink("Toyota de Venezuela", "http://www.toyota.com.ve/");
     } else if (pic.src.match("Toyota")) {
         pic.src = "ITSligo.jpeg";
+        ChangeLink("Institute of Technologi Sligo (Ireland)", "https://www.itsligo.ie/");
     } else if (pic.src.match("ITSligo")) {
         pic.src = "USB.jpeg";
+        ChangeLink("Universidad Simon Bolivar (Venezuela)", "http://www.usb.ve/");
     }// End of if else statments
     SelectCircleByPicture();
 }// End of ChangingPicture function
@@ -37,14 +42,19 @@ function ChangePictureBackwards() {
     // will be set up again.
     if (pic.src.match("USB")) {
         pic.src = "ITSligo.jpeg";
+        ChangeLink("Institute of Technologi Sligo (Ireland)", "https://www.itsligo.ie/");
     } else if (pic.src.match("ITSligo")) {
         pic.src = "Toyota.jpeg";
+        ChangeLink("Toyota de Venezuela", "http://www.toyota.com.ve/");
     } else if (pic.src.match("Toyota")) {
         pic.src = "UNIMET.jpeg";
+        ChangeLink("Univesidad Metropolitana (Venezuela)", "http://www.unimet.edu.ve/");
     } else if (pic.src.match("UNIMET")) {
         pic.src = "FrankHogan.jpeg";
+        ChangeLink("Frank Hogan Ltd (Ireland)", "http://www.frankhogan.ie/contentv3/");
     } else if (pic.src.match("FrankHogan")) {
         pic.src = "USB.jpeg";
+        ChangeLink("Universidad Simon Bolivar (Venezuela)", "http://www.usb.ve/");
     }// End of if else statments
     SelectCircleByPicture();
 };// End of ChangingPicture function
@@ -55,18 +65,23 @@ function ChangePictureByCircle(callerID) {
     switch(callerID){
         case "homeCircle1":
             img.src = 'USB.jpeg';
+             ChangeLink("Universidad Simon Bolivar (Venezuela)", "http://www.usb.ve/");
             break;
         case "homeCircle2":
             img.src = 'FrankHogan.jpeg';
+            ChangeLink("Frank Hogan Ltd (Ireland)", "http://www.frankhogan.ie/contentv3/");
             break;
         case "homeCircle3":
             img.src = "UNIMET.jpeg";
+            ChangeLink("Univesidad Metropolitana (Venezuela)", "http://www.unimet.edu.ve/");
             break;
         case "homeCircle4":
-            img.src = 'Toyota.jpeg'
+            img.src = 'Toyota.jpeg';
+            ChangeLink("Toyota de Venezuela", "http://www.toyota.com.ve/");
             break;
         case "homeCircle5":
             img.src = 'ITSligo.jpeg';
+            ChangeLink("Institute of Technologi Sligo (Ireland)", "https://www.itsligo.ie/");
             break;
     }//End of switch statement to select image based on the circled id passed in
 }//End of ChangePirctureByCircle function
@@ -143,3 +158,10 @@ function SelectCircle(callerID) {
     ChangePictureByCircle(callerID);
 }
 
+//This function will select the appropriate hiperlink and text to be displayed for each image in the gallery
+function ChangeLink(text,url) {
+    link = document.getElementById('homeGalleryLink');
+    link.innerHTML = text;
+    link.style.fontWeight = "900";
+    link.setAttribute('href',url);
+}//end of SelectLing function
