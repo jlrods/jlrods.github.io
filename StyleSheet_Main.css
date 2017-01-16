@@ -22,17 +22,6 @@ header {
 }
 
 
-.social-networks {
-    padding:15px;
-    margin: 20px;
-}
-
-.social-network-icon {
-    height:50px;
-    width:50px;
-    padding:14px;
-}
-
 .text {
     margin:5px;
     text-align:left;
@@ -47,7 +36,7 @@ header {
 }
 #welcomeText {
     position:relative;
-    margin-left:-250px;
+    margin-left:-200px;
 }
 
 .gallery {
@@ -123,12 +112,24 @@ header {
     position:absolute;
     top:370px;
     margin-left:100px;
-
+}
+#underGalleryText {
+    margin-left: 250px;
 }
 
 footer {
     clear: left;
     margin-left: 20px;
     position: absolute;
-    margin-top: 500px;
+    bottom:0px;
+}
+.social-networks {
+    padding:15px;
+    margin: 20px;
+}
+
+.social-network-icon {
+    height:50px;
+    width:50px;
+    padding:14px;
 }

@@ -89,8 +89,6 @@ function ChangePictureByCircle(callerID) {
 function SelectCircleByPicture() {
     var circle, img;
     img = document.getElementById('homeGalleryImage').getAttribute('src');
-    test = document.getElementById('footerHead');
-    test.innerHTML = img;
     switch (img) {
         case "USB.jpeg":
             circle = document.getElementById('homeCircle1');
