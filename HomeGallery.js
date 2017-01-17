@@ -106,10 +106,10 @@ function SelectCircleByPicture() {
         case "USB.jpeg":
             circle = document.getElementById('homeCircle1');
             break;
-        case "FrankHogan.jpeg":
+        case "FrankHogan1.jpeg":
             circle = document.getElementById('homeCircle2');
             break;
-        case "UNIMET.jpeg":
+        case "UNIMET1.jpeg":
             circle = document.getElementById('homeCircle3');
             break;
         case "Toyota.jpeg":
