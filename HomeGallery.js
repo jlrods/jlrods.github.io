@@ -3,7 +3,7 @@
 //This function allow to change the image in the image carrier by clicking on the picture or invoking the function
 function ChangePicture() {
     // Declaring a variable to hold hold the value of the picture that is displayed
-    var pic;
+    var pic,institute;
     //Declare a variable to hold the orange circle
     var circle;
     // Getting the element that stores the picture displayed
@@ -13,21 +13,17 @@ function ChangePicture() {
     // Depending on what picture is displayed a new image will be set up. Once the last image has been displayed the first one
     // will be set up again.
     if (pic.src.match("USB")) {
-        pic.src = "FrankHogan.jpeg";
-        ChangeLink("Frank Hogan Ltd (Ireland)", "http://www.frankhogan.ie/contentv3/");
+        institute = "Frank Hogan";
     } else if (pic.src.match("FrankHogan")) {
-        pic.src = "UNIMET.jpeg";
-        ChangeLink("Univesidad Metropolitana (Venezuela)", "http://www.unimet.edu.ve/");
+        institute = "UNIMET";
     } else if (pic.src.match("UNIMET")) {
-        pic.src = "Toyota.jpeg";
-        ChangeLink("Toyota de Venezuela", "http://www.toyota.com.ve/");
+        institute = "Toyota";
     } else if (pic.src.match("Toyota")) {
-        pic.src = "ITSligo.jpeg";
-        ChangeLink("Institute of Technology Sligo (Ireland)", "https://www.itsligo.ie/");
+        institute = "IT Sligo";
     } else if (pic.src.match("ITSligo")) {
-        pic.src = "USB.jpeg";
-        ChangeLink("Universidad Simon Bolivar (Venezuela)", "http://www.usb.ve/");
+        institute = "USB";
     }// End of if else statments
+    ImageDetailsSelector(institute,pic);
     SelectCircleByPicture();
 }// End of ChangingPicture function
 
@@ -41,21 +37,17 @@ function ChangePictureBackwards() {
     // Depending on what picture is displayed a new image will be set up. Once the last image has been displayed the first one
     // will be set up again.
     if (pic.src.match("USB")) {
-        pic.src = "ITSligo.jpeg";
-        ChangeLink("Institute of Technology Sligo (Ireland)", "https://www.itsligo.ie/");
+        institute = "IT Sligo";
     } else if (pic.src.match("ITSligo")) {
-        pic.src = "Toyota.jpeg";
-        ChangeLink("Toyota de Venezuela", "http://www.toyota.com.ve/");
+        institute = "Toyota";
     } else if (pic.src.match("Toyota")) {
-        pic.src = "UNIMET.jpeg";
-        ChangeLink("Univesidad Metropolitana (Venezuela)", "http://www.unimet.edu.ve/");
+        institute = "UNIMET";
     } else if (pic.src.match("UNIMET")) {
-        pic.src = "FrankHogan.jpeg";
-        ChangeLink("Frank Hogan Ltd (Ireland)", "http://www.frankhogan.ie/contentv3/");
+        institute = "Frank Hogan";
     } else if (pic.src.match("FrankHogan")) {
-        pic.src = "USB.jpeg";
-        ChangeLink("Universidad Simon Bolivar (Venezuela)", "http://www.usb.ve/");
+        institute = "USB";
     }// End of if else statments
+    ImageDetailsSelector(institute, pic);
     SelectCircleByPicture();
 };// End of ChangingPicture function
 
@@ -64,28 +56,49 @@ function ChangePictureByCircle(callerID) {
     var img = document.getElementById('homeGalleryImage');
     switch(callerID){
         case "homeCircle1":
-            img.src = 'USB.jpeg';
-             ChangeLink("Universidad Simon Bolivar (Venezuela)", "http://www.usb.ve/");
+            ImageDetailsSelector("USB",img);
             break;
         case "homeCircle2":
-            img.src = 'FrankHogan.jpeg';
-            ChangeLink("Frank Hogan Ltd (Ireland)", "http://www.frankhogan.ie/contentv3/");
+            ImageDetailsSelector("Frank Hogan",img);
             break;
         case "homeCircle3":
-            img.src = "UNIMET.jpeg";
-            ChangeLink("Univesidad Metropolitana (Venezuela)", "http://www.unimet.edu.ve/");
+            ImageDetailsSelector("UNIMET", img);
             break;
         case "homeCircle4":
-            img.src = 'Toyota.jpeg';
-            ChangeLink("Toyota de Venezuela", "http://www.toyota.com.ve/");
+            ImageDetailsSelector("Toyota", img);
             break;
         case "homeCircle5":
-            img.src = 'ITSligo.jpeg';
-            ChangeLink("Institute of Technology Sligo (Ireland)", "https://www.itsligo.ie/");
+            ImageDetailsSelector("IT Sligo", img);
             break;
     }//End of switch statement to select image based on the circled id passed in
 }//End of ChangePirctureByCircle function
 
+//Function to define the image source path and the correspondign link for that image
+function ImageDetailsSelector(institute,img) {
+    switch (institute) {
+        case "USB":
+            img.src = 'USB.jpeg';
+            ChangeLink("Universidad Simon Bolivar (Venezuela)", "http://www.usb.ve/");
+            break;
+        case "Frank Hogan":
+            img.src = 'FrankHogan.jpeg';
+            ChangeLink("Frank Hogan Ltd (Ireland)", "http://www.frankhogan.ie/contentv3/");
+            break;
+        case "UNIMET":
+            img.src = "UNIMET.jpeg";
+            ChangeLink("Univesidad Metropolitana (Venezuela)", "http://www.unimet.edu.ve/");
+            break;
+        case "Toyota":
+            img.src = 'Toyota.jpeg';
+            ChangeLink("Toyota de Venezuela", "http://www.toyota.com.ve/");
+            break;
+        case "IT Sligo":
+            img.src = 'ITSligo.jpeg';
+            ChangeLink("Institute of Technology Sligo (Ireland)", "https://www.itsligo.ie/");
+    }//End of switch institute
+}//End of ImageDetailsSelector
+
+//Function to select the correct circle when the image is changed regardless the method (arrows or circle selection)
 function SelectCircleByPicture() {
     var circle, img;
     img = document.getElementById('homeGalleryImage').getAttribute('src');
