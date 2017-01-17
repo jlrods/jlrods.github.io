@@ -23,7 +23,7 @@ function ChangePicture() {
         ChangeLink("Toyota de Venezuela", "http://www.toyota.com.ve/");
     } else if (pic.src.match("Toyota")) {
         pic.src = "ITSligo.jpeg";
-        ChangeLink("Institute of Technologi Sligo (Ireland)", "https://www.itsligo.ie/");
+        ChangeLink("Institute of Technology Sligo (Ireland)", "https://www.itsligo.ie/");
     } else if (pic.src.match("ITSligo")) {
         pic.src = "USB.jpeg";
         ChangeLink("Universidad Simon Bolivar (Venezuela)", "http://www.usb.ve/");
@@ -42,7 +42,7 @@ function ChangePictureBackwards() {
     // will be set up again.
     if (pic.src.match("USB")) {
         pic.src = "ITSligo.jpeg";
-        ChangeLink("Institute of Technologi Sligo (Ireland)", "https://www.itsligo.ie/");
+        ChangeLink("Institute of Technology Sligo (Ireland)", "https://www.itsligo.ie/");
     } else if (pic.src.match("ITSligo")) {
         pic.src = "Toyota.jpeg";
         ChangeLink("Toyota de Venezuela", "http://www.toyota.com.ve/");
@@ -81,7 +81,7 @@ function ChangePictureByCircle(callerID) {
             break;
         case "homeCircle5":
             img.src = 'ITSligo.jpeg';
-            ChangeLink("Institute of Technologi Sligo (Ireland)", "https://www.itsligo.ie/");
+            ChangeLink("Institute of Technology Sligo (Ireland)", "https://www.itsligo.ie/");
             break;
     }//End of switch statement to select image based on the circled id passed in
 }//End of ChangePirctureByCircle function
@@ -126,10 +126,7 @@ $(document).ready(function () {
         mouseenter: function () {
             if (this.getAttribute('src') !== 'orange-circle.png') {
                 $(this).attr('src', 'black-circle.png');
-            } else {
-                test = document.getElementById('footerHead');
-                test.innerHTML = this.getAttribute('src');
-            }
+            } 
         },//End of mouseenter function
        mouseleave: function () {       
             if (this.getAttribute('src') == 'black-circle.png'){
