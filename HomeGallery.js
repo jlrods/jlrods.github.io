@@ -81,11 +81,11 @@ function ImageDetailsSelector(institute,img) {
             ChangeLink("Universidad Simon Bolivar (Venezuela)", "http://www.usb.ve/");
             break;
         case "Frank Hogan":
-            img.src = 'FrankHogan.jpeg';
+            img.src = 'FrankHogan1.jpeg';
             ChangeLink("Frank Hogan Ltd (Ireland)", "http://www.frankhogan.ie/contentv3/");
             break;
         case "UNIMET":
-            img.src = "UNIMET.jpeg";
+            img.src = "UNIMET1.jpeg";
             ChangeLink("Univesidad Metropolitana (Venezuela)", "http://www.unimet.edu.ve/");
             break;
         case "Toyota":
