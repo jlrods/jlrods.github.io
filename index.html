@@ -12,24 +12,58 @@
         <div class="menu" ng-include src="url"></div>
     </header>
     
-    
-    <article>
+    <div class="body-wrapper">
         
-        <h1>A nice heading here</h1>
-        <p id="testP">some text</p>
-        <a href="About.html">A link to anther page</a>
-    </article>
-
+        <article id="welcomeText">
+            <h1>Welcome!</h1>
+            <p class="text">Welcome to www.jlrods.com, Jose Leonardo's personal website.</p>
+            <p class="text">You will find some interesting information about JL, details about his education,</p>
+            <p class="text">work experience, insterests, contact detials, social media and personal information.</p>
+        </article>
+        <div class="gallery">
+            <div id="forwardArrowCont" class="arrowContainer">
+                <img id="forwardArrow" class="galleryArrow" src="Arrow.png" onclick="ChangePicture()"/>
+            </div>
+            <img id="homeGalleryImage" src="USB.jpeg" />
+            <div id="backwardArrowCont" class="arrowContainer">
+                <img id="backwardArrow" class="galleryArrow" src="Arrow.png" onclick="ChangePictureBackwards()"/>
+            </div>
+            <div id="homeCircleContainer">
+                <table>
+                    <tr>
+                        <td><img id="homeCircle1" class="galleryCircle" src="orange-circle.png" onclick="SelectCircle(this.id)"/></td>
+                        <td><img id="homeCircle2" class="galleryCircle" src="white-circle.png"  onclick="SelectCircle(this.id)"/></td>
+                        <td><img id="homeCircle3" class="galleryCircle" src="white-circle.png"  onclick="SelectCircle(this.id)"/></td>
+                        <td><img id="homeCircle4" class="galleryCircle" src="white-circle.png"  onclick="SelectCircle(this.id)"/></td>
+                        <td><img id="homeCircle5" class="galleryCircle" src="white-circle.png"  onclick="SelectCircle(this.id)"/></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="homeGalleryCaption">
+                <span><a id="homeGalleryLink" href="http://www.usb.ve/"><b>Universidad Simon Bolivar (Venezuela)</b></a></span>
+            </div>
+        </div>
+        <article id="underGalleryText">
+            <p class="text">Please feel free to surf over this interesting website and get</p>
+            <p class="text">detailed information about JL and his background and experience.</p>
+            <p class="text">This site was developed to deepen JL's understanding about new web</p>
+            <p class="text">technologies and their real world applications!</p>
+            <h1 style="margin-left:250px">Enjoy your visit!</h1>
+        </article>
+    </div>
     <footer>
-        <p>Something interesting here</p>
-        <div class="social-networks">
-            <a id="aFacebook" href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="facebook.png" class="social-network-icon"/></a>
-            <a id="aInstagram" href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="instagram.png" class="social-network-icon"/></a>
-            <a id="aGooglePlus" href="https://plus.google.com/109593661578426784429"><img id="googlePlus" src="googleplus.png" class="social-network-icon"/></a>
-            <a id="aLinkedIn" href="https://www.linkedin.com/in/jos%C3%A9-leonardo-rodr%C3%ADguez-3069a55b?trk=nav_responsive_tab_profile"><img id="linkedIn" src="linkedin.png" class="social-network-icon"/></a>
-            <a id="aGitHub" href="https://github.com/jlrods"><img id="gitHub" src="github.png" class="social-network-icon"/></a>
+        <div class="footerWrapper">
+            <h1 id="footerHead">Visit jlrod's social network!</h1>
+            <div class="social-networks">
+                <a id="aFacebook" href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="facebook.png" class="social-network-icon" /></a>
+                <a id="aInstagram" href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="instagram.png" class="social-network-icon" /></a>
+                <a id="aGooglePlus" href="https://plus.google.com/109593661578426784429"><img id="googlePlus" src="googleplus.png" class="social-network-icon" /></a>
+                <a id="aLinkedIn" href="https://www.linkedin.com/in/jos%C3%A9-leonardo-rodr%C3%ADguez-3069a55b?trk=nav_responsive_tab_profile"><img id="linkedIn" src="linkedin.png" class="social-network-icon" /></a>
+                <a id="aGitHub" href="https://github.com/jlrods"><img id="gitHub" src="github.png" class="social-network-icon" /></a>
+            </div>
         </div>
     </footer>
+    
     <!-- Modules -->
     <script src="MenuApp.js"></script>
     <!-- Controllers -->
@@ -40,6 +74,7 @@
     <!--Interactive Social Media script-->
     <script type='text/javascript' src="Interactive-SocialNetworks.js"></script>
     <script type='text/javascript' src="Interactive-Menu.js"></script>
-
+    <!--Gallery script-->
+    <script type="text/javascript" src="HomeGallery.js"></script>
 </body>
 </html>
