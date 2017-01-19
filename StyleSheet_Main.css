@@ -25,14 +25,16 @@ header {
 .text {
     margin:5px;
     text-align:left;
+
 }
 
 .body-wrapper {
     width:1000px;
     position:absolute;
     left:50%;
-    top:250px;
+    top:300px;
     margin-left:-250px;
+    z-index:1000;
 }
 #welcomeText {
     position:relative;
