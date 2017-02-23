@@ -5,12 +5,21 @@
     max-width:500px;
 }
 
+.decoratedLink {
+    text-decoration:initial;
+    text-decoration:underline;
+    color:blue
+}
 .instImage {
     margin: 5px;
     width:100px;
     height:100px;
     border-style:inset;
     border-width: 5px;
+}
+
+.instDescription {
+    text-align: left;
 }
 #secondarySchool {
     margin-left:400px;
@@ -32,3 +41,4 @@
 #ITSligo {
     margin-left:400px;
 }
+
