@@ -10,7 +10,11 @@
     text-decoration:underline;
     color:blue
 }
-.instImage {
+
+.instDetails {
+    display: block;
+}
+.instLogo {
     margin: 5px;
     width:100px;
     height:100px;
@@ -21,24 +25,58 @@
 .instDescription {
     text-align: left;
 }
+
+.instImage {
+    width:600px;
+    height: 300px;
+    display: block;
+}
 #secondarySchool {
     margin-left:400px;
-    max-width:500px;
+    max-width:1000px;
+}
+
+#secondarySchoolImg {
+    position:absolute;
+    left:-300px;
 }
 
 #USB {
     margin-left: -200px;
+
+}
+
+#USBImg {
+    float:left;
+    position: absolute;
+    left: 400px;
 }
 
 #UNIMET {
     margin-left:400px;
 }
 
+#UNIMETImg {
+    position:absolute;
+    left:-300px;
+}
+
+
 #LCFE {
     margin-left:-200px;
 }
 
+#LCFEImg {
+    float:left;
+    position: absolute;
+    left: 400px;
+}
 #ITSligo {
     margin-left:400px;
+}
+
+#ITSligoImg {
+    position:absolute;
+    left:-300px;
 }
 
