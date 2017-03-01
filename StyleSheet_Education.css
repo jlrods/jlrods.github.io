@@ -31,52 +31,50 @@
     height: 300px;
     display: block;
 }
+
+.imgLeft {
+    position:absolute;
+    left:-300px;
+    width:600px;
+    height: 300px;
+    display: block;
+}
+
+.imgRight{
+    float:left;
+    position: absolute;
+    left: 400px;
+    width:600px;
+    height: 300px;
+    display: block;
+}
+
 #secondarySchool {
     margin-left:400px;
     max-width:1000px;
 }
 
-#secondarySchoolImg {
-    position:absolute;
-    left:-300px;
-}
-
 #USB {
-    margin-left: -200px;
+    margin-left: -300px;
 
-}
-
-#USBImg {
-    float:left;
-    position: absolute;
-    left: 400px;
 }
 
 #UNIMET {
     margin-left:400px;
 }
 
-#UNIMETImg {
-    position:absolute;
-    left:-300px;
-}
-
-
 #LCFE {
-    margin-left:-200px;
+    margin-left:-300px;
 }
 
-#LCFEImg {
-    float:left;
-    position: absolute;
-    left: 400px;
-}
 #ITSligo {
     margin-left:400px;
 }
 
-#ITSligoImg {
-    position:absolute;
-    left:-300px;
+.textEdu {
+    margin:5px;
+    text-align:left;
+    color: darkorange;
+    font-size:22px;
 }
 
