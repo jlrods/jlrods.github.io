@@ -1,6 +1,10 @@
 ﻿body {
 }
 
+.body-wrapper {
+    margin-left: -350px;
+}
+
 .instArticle {
     max-width:500px;
 }
@@ -37,7 +41,6 @@
     left:-300px;
     width:600px;
     height: 300px;
-    display: block;
 }
 
 .imgRight{
@@ -52,6 +55,7 @@
 #secondarySchool {
     margin-left:400px;
     max-width:1000px;
+    align-content:center;
 }
 
 #USB {
