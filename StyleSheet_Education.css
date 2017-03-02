@@ -52,6 +52,14 @@
     display: block;
 }
 
+.instVideo {
+     height:300px;
+     width:500px;
+}
+
+.instMedia {
+    align-content:center;
+}
 #secondarySchool {
     margin-left:400px;
     max-width:1000px;
@@ -82,3 +90,23 @@
     font-size:22px;
 }
 
+#btnUSB{
+    margin-left:560px;
+}
+
+#btnUNIMET{
+    margin-left:-140px;
+}
+
+.btn {
+    width:140px;
+    height:40px;
+}
+
+#videoDivUSB {
+    margin-left:400px;
+}
+
+#videoDivUNIMET {
+    margin-left:-300px;
+}
