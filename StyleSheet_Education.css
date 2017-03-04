@@ -53,8 +53,8 @@
 }
 
 .instVideo {
-     height:300px;
-     width:500px;
+     height:400px;
+     width:700px;
 }
 
 .instMedia {
@@ -101,12 +101,17 @@
 .btn {
     width:140px;
     height:40px;
+    font-size: 17px;
 }
 
 #videoDivUSB {
-    margin-left:400px;
+    margin-left:300px;
 }
 
 #videoDivUNIMET {
-    margin-left:-300px;
+    margin-left:-400px;
+}
+
+.videoFrame {
+    display:none;
 }
