@@ -1,6 +1,12 @@
 ﻿body {
 }
 
+footer {
+    position:static;
+    margin-left:-350px;
+    min-height:100px;
+}
+
 .body-wrapper {
     margin-left: -350px;
 }
@@ -114,4 +120,12 @@
 
 .videoFrame {
     display:none;
+}
+
+#enjoy1 {
+    margin-left:0px;
+}
+
+#enjoy2 {
+    margin-left:-690px;
 }
