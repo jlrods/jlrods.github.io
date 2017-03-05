@@ -1,0 +1,131 @@
+﻿body {
+}
+
+footer {
+    position:static;
+    margin-left:-350px;
+    min-height:100px;
+}
+
+.body-wrapper {
+    margin-left: -350px;
+}
+
+.instArticle {
+    max-width:500px;
+}
+
+.decoratedLink {
+    text-decoration:initial;
+    text-decoration:underline;
+    color:blue
+}
+
+.instDetails {
+    display: block;
+}
+.instLogo {
+    margin: 5px;
+    width:100px;
+    height:100px;
+    border-style:inset;
+    border-width: 5px;
+}
+
+.instDescription {
+    text-align: left;
+}
+
+.instImage {
+    width:600px;
+    height: 300px;
+    display: block;
+}
+
+.imgLeft {
+    position:absolute;
+    left:-300px;
+    width:600px;
+    height: 300px;
+}
+
+.imgRight{
+    float:left;
+    position: absolute;
+    left: 400px;
+    width:600px;
+    height: 300px;
+    display: block;
+}
+
+.instVideo {
+     height:400px;
+     width:700px;
+}
+
+.instMedia {
+    align-content:center;
+}
+#secondarySchool {
+    margin-left:400px;
+    max-width:1000px;
+    align-content:center;
+}
+
+#USB {
+    margin-left: -300px;
+
+}
+
+#UNIMET {
+    margin-left:400px;
+}
+
+#LCFE {
+    margin-left:-300px;
+}
+
+#ITSligo {
+    margin-left:400px;
+}
+
+.textEdu {
+    margin:5px;
+    text-align:left;
+    color: darkorange;
+    font-size:22px;
+}
+
+#btnUSB{
+    margin-left:560px;
+}
+
+#btnUNIMET{
+    margin-left:-140px;
+}
+
+.btn {
+    width:140px;
+    height:40px;
+    font-size: 17px;
+}
+
+#videoDivUSB {
+    margin-left:300px;
+}
+
+#videoDivUNIMET {
+    margin-left:-400px;
+}
+
+.videoFrame {
+    display:none;
+}
+
+#enjoy1 {
+    margin-left:0px;
+}
+
+#enjoy2 {
+    margin-left:-690px;
+}
