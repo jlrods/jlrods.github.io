@@ -64,3 +64,19 @@ scrollUnit {
 #FHLogo {
     margin-left:-300px;
 }
+
+#ToyotaLogo {
+    margin-left:-50px;
+}
+
+#AdeminsaLogo {
+    width:300px;
+    height:300px;
+    margin-left:80px;
+}
+
+#ToyotaImageDisplay {
+    width:750px;
+    height:490px;
+    margin-left:170px;
+}
