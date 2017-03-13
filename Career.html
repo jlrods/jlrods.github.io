@@ -4,6 +4,7 @@
     <title>www.jlrods.com</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="StyleSheet_Main.css" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet_Career.css" />
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
@@ -14,16 +15,60 @@
     <div class="body-wrapper">
         <h1 class="pageTitle"><b>JLROD'S CAREER</b></h1>
         <div id="OptelVision" class="employer">
-            <img id="OptelLogo" class="instLogo"/>
-            <div></div>
+            <img id="OptelLogo" class="instLogo" src="Logo_OptelGroup.gif"/>
+            <div class="empDetails">
+                <img id="OptelImageDisplay" src="Optel1.jpg" class="empImg"/>
+                <div class="scrollMenu">
+                    <div><img id="Optel1" src="Optel1.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="Optel2" src="Optel2.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="Optel3" src="Optel3.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="Optel4" src="Optel4.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="Optel5" src="Optel5.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="Optel6" src="Optel6.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="Optel7" src="Optel7.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="Optel8" src="Optel8.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="Optel9" src="Optel9.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="Optel10" src="Optel10.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="Optel11" src="Optel11.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                </div>
+            </div>
 
         </div>
-        <div id="FrankHogan" class="employer"></div>
-        <div id="TDV" class="employer"></div>
+        <div id="FrankHogan" class="employer">
+            <img id="FHLogo" class="instLogo" src="Logo_FrankHogan.png"/>
+            <div class="empDetails">
+                <img id="FHImageDisplay" src="FH1.jpg" class="empImg"/>
+                <div class="scrollMenu">
+                    <div><img id="FH1" src="FH1.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="FH2" src="FH2.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="FH3" src="FH3.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="FH4" src="FH4.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="FH5" src="FH5.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="FH6" src="FH6.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="FH7" src="FH7.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                    <div><img id="FH8" src="FH8.jpg" onclick="ChangeEmpImage(this.id)"/></div>
+                </div>
+            </div>
+        </div>
+        <div id="TDV" class="employer">
+            <img id="ToyotaLogo" class="instLogo" src="Logo_Toyota.jpg" />
+            <div class="empDetails">
+                <img id="ToyotaImageDisplay" src="TDV1.jpg" class="empImg" />
+                <div class="scrollMenu">
+                    <div><img id="TDV1" src="TDV1.jpg" onclick="ChangeEmpImage(this.id)" /></div>
+                    <div><img id="TDV2" src="TDV2.jpg" onclick="ChangeEmpImage(this.id)" /></div>
+                    <div><img id="TDV3" src="TDV3.jpg" onclick="ChangeEmpImage(this.id)" /></div>
+                    <div><img id="FH4" src="FH4.jpg" onclick="ChangeEmpImage(this.id)" /></div>
+                    <div><img id="FH5" src="FH5.jpg" onclick="ChangeEmpImage(this.id)" /></div>
+                    <div><img id="FH6" src="FH6.jpg" onclick="ChangeEmpImage(this.id)" /></div>
+                    <div><img id="FH7" src="FH7.jpg" onclick="ChangeEmpImage(this.id)" /></div>
+                    <div><img id="FH8" src="FH8.jpg" onclick="ChangeEmpImage(this.id)" /></div>
+                </div>
+            </div>
+        </div>
         <div id="Adminsa" class="employer"></div>
         <div id="MLDN" class="employer"></div>
-    </div>
-    <footer>
+        <footer>
         <p>Something interesting here</p>
         <div class="social-networks">
             <a id="aFacebook" href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="facebook.png" class="social-network-icon" /></a>
@@ -33,6 +78,8 @@
             <a id="aGitHub" href="https://github.com/jlrods"><img id="gitHub" src="github.png" class="social-network-icon" /></a>
         </div>
     </footer>
+    </div>
+    
     <!-- Modules -->
     <script src="MenuApp.js"></script>
     <!-- Controllers -->
@@ -41,5 +88,6 @@
     <script src="menuItem.js"></script>
     <!--Interactive Social Media script-->
     <script type='text/javascript' src="Interactive-SocialNetworks.js"></script>
+    <script type="text/javascript" src="Interactive-Career.js"></script>
 </body>
 </html>
