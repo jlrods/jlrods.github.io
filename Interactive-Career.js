@@ -10,5 +10,11 @@
     } else if(callerID.toLowerCase().includes("tdv")){
         img = document.getElementById("ToyotaImageDisplay");
         img.src = callerID.concat(".jpg");
+    } else if(callerID.toLowerCase().includes("ademinsa")){
+        img = document.getElementById("AdeminsaImageDisplay");
+        img.src = callerID.concat(".jpg");
+    }else if((callerID.toLowerCase().includes("mldn"))){
+        img = document.getElementById("MLDNImageDisplay");
+        img.src = callerID.concat(".jpg");
     }
 }

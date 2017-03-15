@@ -15,6 +15,7 @@ footer {
 }
 
 .employer {
+    margin-top:30px;
     width:1000px;
     height:auto;
 }
@@ -73,10 +74,21 @@ scrollUnit {
     width:300px;
     height:300px;
     margin-left:80px;
+    margin-bottom:35px;
+}
+
+#MLDNLogo {
+    width: 250px;
+    height: 250px;
+    margin-left:110px;
+    margin-bottom:35px;
 }
 
 #ToyotaImageDisplay {
     width:750px;
     height:490px;
     margin-left:170px;
+}
+#Ademinsa {
+    margin-top:50px;
 }
