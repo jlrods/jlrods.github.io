@@ -10,8 +10,8 @@
 
 footer {
     position:static;
-    left:0px;
-    min-height:150px;
+    margin-left:-350px;
+    min-height:100px;
 }
 
 .employer {
@@ -58,7 +58,12 @@ scrollUnit {
     .scrollMenu div img:hover {
         opacity:0.5;
     }
-
+.empText {
+    text-align:left;
+    color: darkorange;
+    margin:5px;
+    font-size:22px;
+}
 #OptelLogo {
     margin-left:-80px;
 }
@@ -87,7 +92,6 @@ scrollUnit {
 #ToyotaImageDisplay {
     width:750px;
     height:490px;
-    margin-left:170px;
 }
 #Ademinsa {
     margin-top:50px;
