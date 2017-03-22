@@ -36,6 +36,12 @@ header {
     margin-left:-250px;
     z-index:1000;
 }
+
+.pageTitle {
+    color:darkorange; 
+    font-size:42px;
+    margin-left:-300px;
+}
 #welcomeText {
     position:relative;
     margin-left:-200px;
