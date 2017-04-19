@@ -3,7 +3,7 @@
 
 footer {
 	position: static;
-	margin-left: -400px;
+	/*margin-left: -400px;*/
 	min-height: 100px;
 }
 
@@ -14,18 +14,18 @@ footer {
 }
 
 .body-wrapper {
-	width:300px;
+	width:850px;
 	margin: 0 auto;
 	top: 300px;
 }
 
 #Boards {
-	margin-left:-400px;
+	/*margin-left:-200px;*/
 	width:850px;
 }
 
 table {
-	margin-left:-400px;
+	/*margin-left:-400px;*/
 }
 
 tr {
@@ -43,7 +43,7 @@ td {
 }
 
 h1 {
-	margin-left:-380px;
+	/*margin-left:-380px;*/
 	color:darkorange;
 }
 

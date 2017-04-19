@@ -29,15 +29,9 @@ header {
 }
 
 .body-wrapper {
-<<<<<<< HEAD
-    width:800px;
-    position:absolute;
-    left:50%;
-=======
+    width:900px;
     display:block;
-    width:1000px;
     margin: 0px auto;
->>>>>>> d200e4909c2f3b57a18c6e9b65a46076c1bf9f9c
     top:300px;
     z-index:1000;
 }
