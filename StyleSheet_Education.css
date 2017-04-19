@@ -2,18 +2,25 @@
 }
 
 footer {
-    position:static;
-    margin-left:-350px;
-    min-height:100px;
+    min-height:3100px;
 }
 
 .body-wrapper {
+<<<<<<< HEAD
     margin-left: -350px;
     width:900px;
+=======
+    width:1250px;
+}
+
+.pageTitle {
+    margin-left:20px;
+>>>>>>> d200e4909c2f3b57a18c6e9b65a46076c1bf9f9c
 }
 
 .instArticle {
-    max-width:500px;
+    max-width:1200px;
+    min-height:450px;
 }
 
 .decoratedLink {
@@ -23,7 +30,26 @@ footer {
 }
 
 .instDetails {
-    display: block;
+    width:500px;
+    max-height:400px;
+    margin-left:0px;
+    margin-right: 0px;
+    float:right;
+}
+.instDetailsRight {
+    width:500px;
+    max-height:400px;
+    margin-left:0px;
+    margin-right: 0px;
+    float:right;
+}
+.instDetailsLeft {
+    width:500px;
+    max-height:400px;
+    position: relative;
+    margin-left:0px;
+    margin-right: 0px;
+    float:left;
 }
 .instLogo {
     margin: 5px;
@@ -38,22 +64,18 @@ footer {
 }
 
 .instImage {
-    width:600px;
+    width:500px;
     height: 300px;
     display: block;
 }
 
 .imgLeft {
-    position:absolute;
-    left:-300px;
     width:600px;
     height: 300px;
 }
 
 .imgRight{
-    float:left;
-    position: absolute;
-    left: 400px;
+    float:right;
     width:600px;
     height: 300px;
     display: block;
@@ -66,28 +88,29 @@ footer {
 
 .instMedia {
     align-content:center;
+    margin-top:90px;
 }
 #secondarySchool {
-    margin-left:400px;
-    max-width:1000px;
-    align-content:center;
+    margin: 0px 0px;
 }
 
 #USB {
-    margin-left: -300px;
+    height:auto;
+    margin-top:20px;
 
 }
 
 #UNIMET {
-    margin-left:400px;
+    height:500px;
+    margin-top:20px;
 }
 
 #LCFE {
-    margin-left:-300px;
+
 }
 
 #ITSligo {
-    margin-left:400px;
+
 }
 
 .textEdu {
@@ -102,7 +125,7 @@ footer {
 }
 
 #btnUNIMET{
-    margin-left:-140px;
+    margin-left:560px;
 }
 
 .btn {
@@ -116,7 +139,7 @@ footer {
 }
 
 #videoDivUNIMET {
-    margin-left:-400px;
+    margin-left:300px;
 }
 
 .videoFrame {
