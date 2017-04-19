@@ -1,0 +1,52 @@
+﻿body {
+}
+
+footer {
+	position: static;
+	margin-left: -400px;
+	min-height: 100px;
+}
+
+#Pint_Profile {
+	position: fixed;
+	left:10px;
+	top:200px;
+}
+
+.body-wrapper {
+	width:300px;
+	margin: 0 auto;
+	top: 300px;
+}
+
+#Boards {
+	margin-left:-400px;
+	width:850px;
+}
+
+table {
+	margin-left:-400px;
+}
+
+tr {
+	padding:30px;
+}
+
+td {
+	padding:20px;
+
+}
+
+.Learning {
+	width:800px;
+	height:600px;
+}
+
+h1 {
+	margin-left:-380px;
+	color:darkorange;
+}
+
+a {
+	text-decoration:none;
+}

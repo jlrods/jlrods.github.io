@@ -4,6 +4,7 @@
     <title>www.jlrods.com</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="StyleSheet_Main.css" />
+	<link rel="stylesheet" type="text/css" href="StyleSheet_MyInterests.css" />
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
@@ -11,24 +12,83 @@
     <header ng-controller="MenuController">
         <div class="menu" ng-include src="url"></div>
     </header>
-
-    <footer>
-        <p>Something interesting here</p>
-        <div class="social-networks">
-            <a id="aFacebook" href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="facebook.png" class="social-network-icon" /></a>
-            <a id="aInstagram" href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="instagram.png" class="social-network-icon" /></a>
-            <a id="aGooglePlus" href="https://plus.google.com/109593661578426784429"><img id="googlePlus" src="googleplus.png" class="social-network-icon" /></a>
-            <a id="aLinkedIn" href="https://www.linkedin.com/in/jos%C3%A9-leonardo-rodr%C3%ADguez-3069a55b?trk=nav_responsive_tab_profile"><img id="linkedIn" src="linkedin.png" class="social-network-icon" /></a>
-            <a id="aGitHub" href="https://github.com/jlrods"><img id="gitHub" src="github.png" class="social-network-icon" /></a>
-        </div>
-    </footer>
-    <!-- Modules -->
-    <script src="MenuApp.js"></script>
-    <!-- Controllers -->
-    <script src="MenuAppController.js"></script>
-    <!-- Directives -->
-    <script src="menuItem.js"></script>
-    <!--Interactive Social Media script-->
-    <script type='text/javascript' src="Interactive-SocialNetworks.js"></script>
+	<div class="body-wrapper">
+		<div>
+			<h1>Pinterest</h1>
+			<table id="Boards">
+				<tr>
+					<td>
+						<div id="board1">
+							<a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/jlrods1/pc-building/"></a>
+						</div>
+					</td>
+					<td>
+						<div id="board2">
+							<a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/jlrods1/programming/"></a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="board3">
+							<a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/jlrods1/land-cruiser/"></a>
+						</div>
+					</td>
+					<td>
+						<div id="board4">
+							<a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/jlrods1/gadgets/"></a>
+						</div>
+					</td>
+				</tr>
+			</table>
+			<h1>Online Learning</h1>
+			<table>
+				<tr><td><a href="https://www.w3schools.com"><h2>W3Schools</h2></a></td></tr>
+				<tr><td><iframe class="Learning" id="W3Schools" src="https://www.w3schools.com"></iframe></td></tr>
+				<tr><td><a href="http://www.foro.lospillaos.es/"><h2>Foro Los Pillaos</h2></a></td></tr>
+				<tr><td><iframe class="Learning" id="LosPillaos" src="http://www.foro.lospillaos.es/"></iframe></td></tr>
+				<tr><td><a href="http://community.ubuntu.com/"><h2>Ubuntu</h2></a></td></tr>
+				<tr><td><iframe class="Learning" id="EDX" src="http://community.ubuntu.com/"></iframe></td></tr>				
+			</table>
+            <h1>Sports</h1>
+            <table>
+                <tr><td><a href="http://www.leones.com/"><h2>Los Leones del Caracas</h2></a></td></tr>
+                <tr><td><iframe class="Learning" id="Leones" src="http://www.leones.com/"></iframe></td></tr>
+                <tr><td><a href="https://www.mlb.com/yankees"><h2>NY Yankees</h2></a></td></tr>
+                <tr><td><iframe class="Learning" id="Yankees" src="https://www.mlb.com/yankees"></iframe></td></tr>
+            </table>
+			<h1>Nice Links</h1>
+			<table>
+				<tr><td><a href="http://www.cuevana2.tv/"><h2>Cuevana 2. Movies and more!</h2></a></td></tr>
+				<tr><td><iframe class="Learning" id="Cuevana" src="http://www.cuevana2.tv/"></iframe></td></tr>
+				<tr><td><a href="http://www.starwars.com/"><h2>May the force be with you!</h2></a></td></tr>
+				<tr><td><iframe class="Learning" id="StrarWars" src="http://www.starwars.com/"></iframe></td></tr>
+			</table>
+		</div>
+		<div id="Pint_Profile">
+			<a data-pin-do="embedUser" data-pin-board-width="900" data-pin-scale-height="220" data-pin-scale-width="115" href="https://www.pinterest.com/jlrods1/"></a>
+		</div>
+		<footer>
+			<h1 id="footerHead" style="color:black">Visit jlrod's social network!</h1>
+			<div class="social-networks">
+				<a id="aFacebook" href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="facebook.png" class="social-network-icon" /></a>
+				<a id="aInstagram" href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="instagram.png" class="social-network-icon" /></a>
+				<a id="aGooglePlus" href="https://plus.google.com/109593661578426784429"><img id="googlePlus" src="googleplus.png" class="social-network-icon" /></a>
+				<a id="aLinkedIn" href="https://www.linkedin.com/in/jos%C3%A9-leonardo-rodr%C3%ADguez-3069a55b?trk=nav_responsive_tab_profile"><img id="linkedIn" src="linkedin.png" class="social-network-icon" /></a>
+				<a id="aGitHub" href="https://github.com/jlrods"><img id="gitHub" src="github.png" class="social-network-icon" /></a>
+			</div>
+		</footer>
+	</div>
+	
+	<!-- Modules -->
+	<script src="MenuApp.js"></script>		
+	<!-- Controllers -->
+	<script src="MenuAppController.js"></script>
+	<!-- Directives -->
+	<script src="menuItem.js"></script>
+	<!--Interactive Social Media script-->
+	<script type='text/javascript' src="Interactive-SocialNetworks.js"></script>
+	<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
+
 </html>
