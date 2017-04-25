@@ -2,7 +2,12 @@
 }
 
 footer {
-    min-height:3100px;
+    position:static;
+    min-height:100px;
+}
+
+.footerWrapper {
+    position:static;
 }
 
 .body-wrapper {
