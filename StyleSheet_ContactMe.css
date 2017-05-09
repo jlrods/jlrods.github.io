@@ -1,0 +1,38 @@
+﻿body {
+}
+
+footer {
+    position:static;
+    margin-left:-200px;
+    min-height:100px;
+}
+
+.body-wrapper {
+	width:650px;
+	margin: 0 auto;
+	top: 300px;
+}
+
+#ContactText {
+    width: 650px;
+    height: 250px;
+    font-size: 12px;
+    text-align:justify;
+    border:groove;
+}
+
+#email {
+    width: 650px;
+    height: 50px;
+}
+
+    #email tr td {
+        width:25px;
+        text-align:left;
+    }
+
+
+#message {
+    width: 650px;
+    height: 300px;   
+}  
