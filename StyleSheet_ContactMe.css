@@ -17,8 +17,8 @@ footer {
     width: 650px;
     height: 250px;
     font-size: 12px;
-    text-align:justify;
-    border:groove;
+    text-align: justify;
+    border: groove;
 }
 
 #email {
@@ -27,7 +27,7 @@ footer {
 }
 
     #email tr td {
-        width:25px;
+        width:250px;
         text-align:left;
     }
 
@@ -35,4 +35,9 @@ footer {
 #message {
     width: 650px;
     height: 300px;   
-}  
+}
+
+#ContactHeader {
+    position: static;
+    margin-left: -165px;
+}
