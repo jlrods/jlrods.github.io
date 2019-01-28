@@ -21,6 +21,8 @@ function ChangePicture() {
     } else if (pic.src.match("Toyota")) {
         institute = "IT Sligo";
     } else if (pic.src.match("ITSligo")) {
+        institute = "Optel";
+    } else if (pic.src.match("Optel")){
         institute = "USB";
     }// End of if else statments
     ImageDetailsSelector(institute,pic);
@@ -36,9 +38,11 @@ function ChangePictureBackwards() {
     // If else statements to check what picture is being displayed at the moment of invoking the function
     // Depending on what picture is displayed a new image will be set up. Once the last image has been displayed the first one
     // will be set up again.
-    if (pic.src.match("USB")) {
+    if (pic.src.match("Images/HomeGallery/USB")) {
+        institute = "Optel";
+    } else if (pic.src.match("Images/HomeGallery/Optel")){
         institute = "IT Sligo";
-    } else if (pic.src.match("ITSligo")) {
+    }else if (pic.src.match("Images/HomeGallery/ITSligo")) {
         institute = "Toyota";
     } else if (pic.src.match("Toyota")) {
         institute = "UNIMET";
@@ -70,6 +74,8 @@ function ChangePictureByCircle(callerID) {
         case "homeCircle5":
             ImageDetailsSelector("IT Sligo", img);
             break;
+        case "homeCircle6":
+            ImageDetailsSelector("Optel",img);
     }//End of switch statement to select image based on the circled id passed in
 }//End of ChangePirctureByCircle function
 
@@ -77,24 +83,28 @@ function ChangePictureByCircle(callerID) {
 function ImageDetailsSelector(institute,img) {
     switch (institute) {
         case "USB":
-            img.src = 'USB.jpeg';
+            img.src = 'Images/HomeGallery/USB.jpg';
             ChangeLink("Universidad Simon Bolivar (Venezuela)", "http://www.usb.ve/");
             break;
         case "Frank Hogan":
-            img.src = 'FrankHogan1.jpeg';
+            img.src = 'Images/HomeGallery/FrankHogan.jpeg';
             ChangeLink("Frank Hogan Ltd (Ireland)", "http://www.frankhogan.ie/contentv3/");
             break;
         case "UNIMET":
-            img.src = "UNIMET1.jpeg";
+            img.src = "Images/HomeGallery/UNIMET.jpeg";
             ChangeLink("Univesidad Metropolitana (Venezuela)", "http://www.unimet.edu.ve/");
             break;
         case "Toyota":
-            img.src = 'Toyota.jpeg';
+            img.src = 'Images/HomeGallery/Toyota.jpeg';
             ChangeLink("Toyota de Venezuela", "http://www.toyota.com.ve/");
             break;
         case "IT Sligo":
-            img.src = 'ITSligo.jpeg';
+            img.src = 'Images/HomeGallery/ITSligo.jpeg';
             ChangeLink("Institute of Technology Sligo (Ireland)", "https://www.itsligo.ie/");
+            break;
+        case "Optel":
+            img.src = 'Images/HomeGallery/Optel.jpg';
+            ChangeLink("Optel Group (Ireland)", "https://www.optelgroup.com");
     }//End of switch institute
 }//End of ImageDetailsSelector
 
@@ -103,24 +113,26 @@ function SelectCircleByPicture() {
     var circle, img;
     img = document.getElementById('homeGalleryImage').getAttribute('src');
     switch (img) {
-        case "USB.jpeg":
+        case "Images/HomeGallery/USB.jpg":
             circle = document.getElementById('homeCircle1');
             break;
-        case "FrankHogan1.jpeg":
+        case "Images/HomeGallery/FrankHogan.jpeg":
             circle = document.getElementById('homeCircle2');
             break;
-        case "UNIMET1.jpeg":
+        case "Images/HomeGallery/UNIMET.jpeg":
             circle = document.getElementById('homeCircle3');
             break;
-        case "Toyota.jpeg":
+        case "Images/HomeGallery/Toyota.jpeg":
             circle = document.getElementById('homeCircle4');
             break;
-        case "ITSligo.jpeg":
+        case "Images/HomeGallery/ITSligo.jpeg":
             circle = document.getElementById('homeCircle5');
             break;
+        case "Images/HomeGallery/Optel.jpg":
+            circle = document.getElementById('homeCircle6');
     }//End of switch statemet
     ClearCircleSet();
-    circle.src = "orange-circle.png";
+    circle.src = "Images/HomeGallery/orange-circle.png";
 }
 //This function will trigger jquery funtions to change circle gallery images on the bottom to change 
 // when hover the circles to change the images as per user selection
@@ -137,13 +149,13 @@ $(document).ready(function () {
 //    test.innerHTML =circleSelected;
     $(".galleryCircle").on({
         mouseenter: function () {
-            if (this.getAttribute('src') !== 'orange-circle.png') {
-                $(this).attr('src', 'black-circle.png');
+            if (this.getAttribute('src') !== 'Images/HomeGallery/orange-circle.png') {
+                $(this).attr('src', 'Images/HomeGallery/black-circle.png');
             } 
         },//End of mouseenter function
        mouseleave: function () {       
-            if (this.getAttribute('src') == 'black-circle.png'){
-                $(this).attr('src', 'white-circle.png')
+           if (this.getAttribute('src') === 'Images/HomeGallery/black-circle.png'){
+               $(this).attr('src', 'Images/HomeGallery/white-circle.png')
             }           
         }//End of mouseleave function
    })//End of on function for galleryCircle class
@@ -155,14 +167,14 @@ function ClearCircleSet() {
     var circle;
     for (i = 1; i <= circleCollection.length ; i++) {
         circle = document.getElementById('homeCircle' + i.toString())
-        circle.src = "white-circle.png"
+        circle.src = "Images/HomeGallery/white-circle.png"
     }
 }
 //This function that takes a circle elemet as argument, then set all circules as white circles but the one passed in
 function SelectCircle(callerID) {   
     ClearCircleSet();
     circle = document.getElementById(callerID);
-    circle.src = "orange-circle.png";
+    circle.src = "Images/HomeGallery/orange-circle.png";
     ChangePictureByCircle(callerID);
 }
 

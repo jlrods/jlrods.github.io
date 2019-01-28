@@ -1,7 +1,4 @@
-﻿body {
-}
-
-.body-wrapper {
+﻿.body-wrapper {
     width:500px;
 }
 
@@ -36,9 +33,6 @@ footer {
     left:1000px;
     margin-right:0;
 
-}
-
-scrollUnit {
 }
 
 .scrollMenu div {
