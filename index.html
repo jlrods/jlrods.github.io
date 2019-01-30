@@ -42,82 +42,92 @@
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <h1 id="welcomeText">Welcome!</h1>
-        <div class="row">
-            <div class="col-md-3">
-                <p class="text-justify">Welcome to www.jlrods.com, Jose Leonardo's personal website. 
-                You will find some interesting information about me, details about my education,
-                work experience, insterests, contact detials, social media and personal information.</p>
-            </div>
-            <div class="col-md-6">
-                <div id="gallery">
-                    <img id="homeGalleryImage" class="img-fluid mx-auto d-block img-thumbnail" src="Images/HomeGallery/USB.jpg" width="400"  style="max-height: 250px;" />                                
-                    <div>
-                        <div class="row">
-                            <div class="col-4">
-                                <div id="backwardArrowCont" class="arrowContainer" style="margin-top:5px">
-                                    <img id="backwardArrow" class="img-fluid float-right" src="Images/HomeGallery/Arrow.png" onclick="ChangePictureBackwards()" />
-                                </div>  
-                            </div>
-                            <div class="col-4" style="align-content:center">
-                                <div class="row">
-                                    <div class="cole-sm-2 mx-auto d-block" style="align-content:center">
-                                        <img class="galleryCircle" id="homeCircle1" style="height: 13px;width: 13px;" src="Images/HomeGallery/orange-circle.png" onclick="SelectCircle(this.id)" />
+    <div id="body-wraper">
+        <div class="container">
+            <h1 id="welcomeText">Welcome!</h1>
+            <div class="row">
+                <div class="col-md-3">
+                    <p class="text-justify">
+                        Welcome to www.jlrods.com, Jose Leonardo's personal website.
+                        You will find some interesting information about me, details about my education,
+                        work experience, insterests, contact detials, social media and personal information.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div id="gallery">
+                        <img id="homeGalleryImage" class="img-fluid mx-auto d-block img-thumbnail" src="Images/HomeGallery/USB.jpg" width="400" style="max-height: 250px;" />
+                        <div>
+                            <div class="row">
+                                <div class="col-4">
+                                    <div id="backwardArrowCont" class="arrowContainer" style="margin-top:5px">
+                                        <img id="backwardArrow" class="img-fluid float-right" src="Images/HomeGallery/Arrow.png" onclick="ChangePictureBackwards()" />
                                     </div>
-                                    <div class="cole-sm-2 mx-auto d-block" style="align-content:center">
-                                        <img class="galleryCircle" id="homeCircle2" style="height: 13px;width: 13px;" src="Images/HomeGallery/white-circle.png" onclick="SelectCircle(this.id)" />
+                                </div>
+                                <div class="col-4" style="align-content:center">
+                                    <div class="row">
+                                        <div class="cole-sm-2 mx-auto d-block" style="align-content:center">
+                                            <img class="galleryCircle" id="homeCircle1" style="height: 13px;width: 13px;" src="Images/HomeGallery/orange-circle.png" onclick="SelectCircle(this.id)" />
+                                        </div>
+                                        <div class="cole-sm-2 mx-auto d-block" style="align-content:center">
+                                            <img class="galleryCircle" id="homeCircle2" style="height: 13px;width: 13px;" src="Images/HomeGallery/white-circle.png" onclick="SelectCircle(this.id)" />
+                                        </div>
+                                        <div class="cole-sm-2 mx-auto d-block" style="align-content:center">
+                                            <img class="galleryCircle" id="homeCircle3" style="height: 13px;width: 13px;" src="Images/HomeGallery/white-circle.png" onclick="SelectCircle(this.id)" />
+                                        </div>
+                                        <div class="cole-sm-2 mx-auto d-block" style="align-content:center">
+                                            <img class="galleryCircle" id="homeCircle4" style="height: 13px;width: 13px;" src="Images/HomeGallery/white-circle.png" onclick="SelectCircle(this.id)" />
+                                        </div>
+                                        <div class="cole-sm-2 mx-auto d-block" style="align-content:center">
+                                            <img class="galleryCircle" id="homeCircle5" style="height: 13px;width: 13px;" src="Images/HomeGallery/white-circle.png" onclick="SelectCircle(this.id)" />
+                                        </div>
+                                        <div class="cole-sm-2 mx-auto d-block" style="align-content:center">
+                                            <img class="galleryCircle" id="homeCircle6" style="height: 13px;width: 13px;" src="Images/HomeGallery/white-circle.png" onclick="SelectCircle(this.id)" />
+                                        </div>
                                     </div>
-                                    <div class="cole-sm-2 mx-auto d-block" style="align-content:center">
-                                        <img class="galleryCircle" id="homeCircle3" style="height: 13px;width: 13px;" src="Images/HomeGallery/white-circle.png" onclick="SelectCircle(this.id)" />
-                                    </div>
-                                    <div class="cole-sm-2 mx-auto d-block" style="align-content:center"> 
-                                        <img class="galleryCircle" id="homeCircle4" style="height: 13px;width: 13px;" src="Images/HomeGallery/white-circle.png" onclick="SelectCircle(this.id)" />
-                                    </div>
-                                    <div class="cole-sm-2 mx-auto d-block" style="align-content:center">
-                                        <img class="galleryCircle" id="homeCircle5" style="height: 13px;width: 13px;" src="Images/HomeGallery/white-circle.png" onclick="SelectCircle(this.id)" />
-                                    </div>
-                                    <div class="cole-sm-2 mx-auto d-block" style="align-content:center">
-                                        <img class="galleryCircle" id="homeCircle6" style="height: 13px;width: 13px;" src="Images/HomeGallery/white-circle.png" onclick="SelectCircle(this.id)" />
+                                </div>
+                                <div class="col-4">
+                                    <div id="forwardArrowCont" class="arrowContainer" style="margin-top:5px">
+                                        <img id="forwardArrow" class="float-left" src="Images/HomeGallery/Arrow.png" onclick="ChangePicture()" />
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
-                                <div id="forwardArrowCont" class="arrowContainer" style="margin-top:5px">
-                                    <img id="forwardArrow" class="float-left" src="Images/HomeGallery/Arrow.png" onclick="ChangePicture()" />
-                                </div> 
+                        </div>
+                        <div id="homeGalleryCaption" style="align-content:center">
+                            <div class="row">
+                                <div class="col-sm-12 text-center">
+                                    <a id="homeGalleryLink" style="color:orange" href="http://www.usb.ve/"><b>Universidad Simon Bolivar (Venezuela)</b></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div id="homeGalleryCaption" style="align-content:center">
-                        <div class="row">
-                            <div class="col-sm-12 text-center">
-                                <a id="homeGalleryLink" style="color:orange" href="http://www.usb.ve/"><b>Universidad Simon Bolivar (Venezuela)</b></a>
-                            </div>
-                        </div>                  
-                    </div>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-justify">
+                        Please feel free to surf through this interesting website and
+                        get detailed information about myself, my background and experience. This site
+                        was developed to deepen my understanding about new web development technologies and their real world applications!
+                    </p>
+                    <h2>Enjoy your visit!</h2>
                 </div>
             </div>
-            <div class="col-md-3">
-                <p class="text-justify">Please feel free to surf through this interesting website and 
-                get detailed information about myself, my background and experience. This site 
-                was developed to deepen my understanding about new web development technologies and their real world applications!</p>
-                <h2>Enjoy your visit!</h2>
+        </div>
+        <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0">
+            <div class="footerWrapper">
+                <h3 id="footerHead">Visit jlrod's social media!</h3>
+                <div class="social-networks">
+                    <a id="aFacebook" href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94"><img id="facebook" src="Images/SocialMedia/Facebook.png" class="social-network-icon" /></a>
+                    <a id="aInstagram" href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="Images/SocialMedia/Instagram.png" class="social-network-icon" /></a>
+                    <!--<a id="aGooglePlus" href="https://plus.google.com/109593661578426784429"><img id="googlePlus" src="googleplus.png" class="social-network-icon" /></a>-->
+                    <a id="aLinkedIn" href="https://www.linkedin.com/in/jos%C3%A9-leonardo-rodr%C3%ADguez-3069a55b?trk=nav_responsive_tab_profile"><img id="linkedIn" src="Images/SocialMedia/LinkedIn.png" class="social-network-icon" /></a>
+                    <a id="aGitHub" href="https://github.com/jlrods"><img id="gitHub" src="Images/SocialMedia/GitHub.png" class="social-network-icon" /></a>
+                </div>
             </div>
-        </div> 
-    </div>
-    <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0">
-        <div class="footerWrapper">
-            <h3 id="footerHead">Visit jlrod's social media!</h3>
-            <div class="social-networks">
-                <a id="aFacebook" href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="Images/SocialMedia/Facebook.png" class="social-network-icon" /></a>
-                <a id="aInstagram" href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="Images/SocialMedia/Instagram.png" class="social-network-icon" /></a>
-                <!--<a id="aGooglePlus" href="https://plus.google.com/109593661578426784429"><img id="googlePlus" src="googleplus.png" class="social-network-icon" /></a>-->
-                <a id="aLinkedIn" href="https://www.linkedin.com/in/jos%C3%A9-leonardo-rodr%C3%ADguez-3069a55b?trk=nav_responsive_tab_profile"><img id="linkedIn" src="Images/SocialMedia/LinkedIn.png" class="social-network-icon" /></a>
-                <a id="aGitHub" href="https://github.com/jlrods"><img id="gitHub" src="Images/SocialMedia/GitHub.png" class="social-network-icon" /></a>
+            <div class="d-flex justify-content-end">
+                <p class="text-secondary copyRight">© CopyRight 2019.<br />-All rights reserved.</p>
             </div>
         </div>
     </div>
+    
 
     <!--Gallery script-->
     <script type="text/javascript" src="JS/HomeGallery.js"></script>

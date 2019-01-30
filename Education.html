@@ -3,164 +3,241 @@
 <head>
     <title>www.jlrods.com</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="StyleSheet_Main.css" />
-    <link rel="stylesheet" type="text/css" href="StyleSheet_Education.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="StyleSheets/StyleSheet_Main.css" />
+    <link rel="stylesheet" type="text/css" href="StyleSheets/StyleSheet_Education.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
-<body ng-app="menuApp">
-    <header ng-controller="MenuController">
-        <div class="menu" ng-include src="url"></div>
+<body>
+    <header>
+        <div class="" page-header"">
+            <img id="headImage" class="img-responsive" src="Images/Header.png" style="min-height: 80px; max-height: 150px; width: 100%" />
+        </div>
     </header>
-    <div class="body-wrapper">
-        <h1 class="pageTitle"><b>JLROD'S EDUCATION</b></h1>
-        <article id="secondarySchool" class="instArticle">
-            <img class="imgLeft" src="CESA.jpeg" style="margin-top:55px"/>
-            <div class="instDetailsRight">
-                <h1>Colegion San Agustin El Marques (CESA)</h1>
-                <img class="instLogo" src="Logo_CESA2.jpeg"/>
-                <p class="textEdu"><b>Location: </b>Caracas-Venezuela</p>
-                <p class="textEdu"><b>Website: </b><a class ="decoratedLink" href="https://colegiosanagustinelmarques.wordpress.com/">colegiosanagustinelmarques.wordpress.com</a></p>
-                <br />
-                <div class="instDescription">
-                    Colegio San Agustín El Marqués is a recognized secundary school at the east of Caracas.<br />
-                    I first signed up for this school in 1996 to take up 2nd year of secondary and then
-                    continued my studies until I got graduated in 2K.<br />
-                    This School is a Chistian dogma secundary school, run by an Augutinian priest group since 1963.<br />
-                    Colegio San Agustin El Marques is well recognized for its highly demanding programs in
-                    Biology, Maths and Literature.
+    <nav class="navbar navbar-expand-md sticky-top bg-dark navbar-dark ">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar ">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav justify-content-center">
+                <li class="nav-item menuItem">
+                    <a class="nav-link" href="index.html"><i class='fas fa-home menuIcon'></i>Home</a>
+                </li>
+                <li class="nav-item menuItem">
+                    <a class="nav-link" href="Education.html"><i class='fas fa-user-graduate menuIcon'></i>Education</a>
+                </li>
+                <li class="nav-item menuItem">
+                    <a class="nav-link" href="Career.html"><i class='fas fa-laptop menuIcon'></i>Career</a>
+                </li>
+                <li class="nav-item menuItem">
+                    <a class="nav-link" href="MyInterests.html"><i class='fab fa-pinterest menuIcon'></i>Interests</a>
+                </li>
+                <li class="nav-item menuItem">
+                    <a class="nav-link" href="ContactMe.html"><i class='fas fa-envelope menuIcon'></i>Contact me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="body-wraper">
+        <div class="container">
+            <h1 style="color:orange"><b>JLRODS'S EDUCATION!</b></h1>
+            <h3>Colegion San Agustin El Marques (CESA)</h3>
+            <div class="d-sm-flex flex-sm-row align-items-center">
+                <div>
+                    <img class="instLogo" src="Images/Education/Logo_CESA2.jpeg" />
+                </div>
+                <div>
+                    <p class="textEdu"><b>Location: </b>Caracas-Venezuela</p>
+                    <p class="textEdu"><b>Website: </b><a class="decoratedLink" href="https://colegiosanagustinelmarques.wordpress.com/">colegiosanagustinelmarques.com</a></p>
                 </div>
             </div>
-        </article>
-        <article id="USB" class="instArticle">
-            <img class="imgRight" src="USB2.jpeg" style="margin-top:120px"/>
-            <div class="instDetailsLeft">
-                <h1>Universidad Simon Bolivar (USB)</h1>
-                <img class="instLogo" src="Logo_USB1.png"/>
-                <p class="textEdu"><b>Location:</b> Caracas-Venezuela</p>
-                <p class="textEdu"><b>Website: </b><a class="decoratedLink" href="http://www.usb.ve/">www.usb.ve</a></p>
-                <br />
-                <div class="instDescription">
-                    After I finished highschool, I enrolled myself in the Unversity in September 2K.<br />
-                    The Universidad Simón Bolívar was my first option as I demostrared interest in the School of Mechanical Engineering.<br />
-                    Mechanical Engineers graduated from Universidad Simón Bolívar are recognized with a professional
-                    profile to successfully develop and design different sorts of systems such as mechanical, hydraulic or pneumatic systems.<br />
-                    In addition, they are prepared to undertake projects related to power generation, manufacturing processes,
-                    HVAC and any other regarding mechanics within the industrial sector.<br />
-                    I graduated from the  School of Mechanical Engineering in 2006 after meeting all the academic
-                    requirements, including a 6 month internship, which took place in Minera Loma de Níquel, within the
-                    Mechanical Maintenance department.
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <img class="img-fluid mx-auto d-block rounded" src="Images/Education/CESA.jpeg" width="550" height="450" />
                 </div>
-                <br />
+                <div class="col-md-6">
+                    <div class="instDetailsRight">
+                        <div class="text-justify instDescription" style="vertical-align:middle;margin-top:auto">
+                            Colegio San Agustín El Marqués is a recognized secundary school at the east of Caracas.<br />
+                            I first signed up for this school in 1996 to take up 2nd year of secondary school and then
+                            continued my studies until I got graduated in 2K.<br />
+                            This School is a Chistian dogma secundary school, run by an Augutinian priest group since 1963.<br />
+                            Colegio San Agustín El Marqués is well recognized for its highly demanding programs in
+                            Biology, Maths and Literature.
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-        </article>
-        <div class="instMedia">
-            <button id="btnUSB" class="btn"><b>Check this video!!!</b></button>
-            <div id="videoDivUSB" class="videoFrame">
-                <article>
-                    <p id="enjoy1">Enjoy this nice video!!!</p>
-                    <iframe id="videoUSB" class="instVideo" src="https://www.youtube.com/embed/w8MVOjQbUq0?controls=1"></iframe>
-                    <iframe style="display:none" width="854" height="480" src="https://www.youtube.com/embed/w8MVOjQbUq0" frameborder="0" allowfullscreen></iframe>
-                </article>
+            <h3 style="margin-top:30px">Universidad Simón Bolívar (USB)</h3>
+            <div class="d-sm-flex flex-sm-row align-items-center">
+                <div>
+                    <img class="instLogo" src="Images/Education/Logo_USB1.png" />
+                </div>
+                <div>
+                    <p class="textEdu"><b>Location:</b> Caracas-Venezuela</p>
+                    <p class="textEdu"><b>Website: </b><a class="decoratedLink" href="http://www.usb.ve/">www.usb.ve</a></p>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <div class="instDetailsLeft">
+                        <div class="text-justify instDescription">
+                            After I finished highschool, I enrolled myself in the Unversity in September 2K.The Universidad Simón Bolívar was my first
+                            option as I demostrared interest in the School of Mechanical Engineering.<br />
+                            Mechanical Engineers graduated from Universidad Simón Bolívar are recognized with a professional
+                            profile to successfully develop and design different sorts of systems such as mechanical, hydraulic or pneumatic systems.
+                            In addition, they are prepared to undertake projects related to power generation, manufacturing processes,
+                            HVAC and any other regarding mechanics within the industrial sector.<br />
+                            I graduated from the  School of Mechanical Engineering in 2006 after meeting all the academic
+                            requirements, including a 6 month internship, which took place in Minera Loma de Níquel, within the
+                            Mechanical Maintenance department.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid mx-auto d-block rounded" src="Images/Education/USB2.jpeg" width="550" height="450" />
+                </div>
+            </div>
+            <div class="container instMedia">
+                <div class="d-flex justify-content-center">
+                    <button id="btnUSB" class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="Click here to display a video about USB!"><b>Check this video!!!</b></button>
+                </div>
+                <div id="videoDivUSB" class="videoFrame" style="align-content:center">
+                    <div class="text-center">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe id="videoUSB" class="embed-responsive-item instVideo" src="https://www.youtube.com/embed/w8MVOjQbUq0?controls=1"></iframe>
+                            <iframe class="embed-responsive-item" style="display:none" width="854" height="480" src="https://www.youtube.com/embed/w8MVOjQbUq0" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Universidad Metropolitana (UNIMET)</h3>
+            <div class="d-sm-flex flex-sm-row align-items-center">
+                <div>
+                    <img class="instLogo" src="Images/Education/Logo_UNIMET1.png" />
+                </div>
+                <div>
+                    <p class="textEdu"><b>Location:</b> Caracas-Venezuela</p>
+                    <p class="textEdu"><b>Website: </b><a class="decoratedLink" href="http://www.unimet.edu.ve/">www.unimet.edu.ve</a></p>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <img class="img-fluid mx-auto d-block rounded" src="Images/Education/UNIMET2.jpeg" width="550" height="450" style="max-height:350px" />
+                </div>
+                <div class="col-md-6">
+                    <div class="instDetailsLeft">
+                        <div class="text-justify instDescription">
+                            In 2008, a new opportunity showed up. I made the decision to boost up my professional career in Toyota
+                            by taking up a Master degree in Management Engineering, which perfectly matched my needs within the organization.<br />
+                            The Universidad Metropolitana is a well known College in Caracas with strong pensums in management programs.<br />
+                            The Master in Management Engineering offered by the Universidad Metropolitana is addressed to professionals from different engineering branches.
+                            Students are deeply introduced into the modern management style by going through concepts such as finance, human resources, strategic management,
+                            international business and economic engineering.<br />
+                            This postgraduate study aims at turning these professionals into modern-minded managers in order to effectively control production, operations,
+                            projects, logistics, and other areas within different sorts of business.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container instMedia">
+                <div class="d-flex justify-content-center">
+                    <button id="btnUNIMET" class="btn btn-dark" data-toggle="tooltip" data-placement="top" title="Click here to display a video about UNIMET!"><b>Check this video!!!</b></button>
+                </div>
+                <div id="videoDivUNIMET" class="videoFrame">
+                    <div class="text-center">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe id="videoUNIMET" class="embed-responsive-item instVideo" src="https://www.youtube.com/embed/sXt1yJi88QE"></iframe>
+                            <iframe class="embed-responsive-item" style="display:none" width="854" height="480" src="https://www.youtube.com/embed/sXt1yJi88QE" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Limerick College of Further Education (LCFE)</h3>
+            <div class="d-sm-flex flex-sm-row align-items-center">
+                <div>
+                    <img class="instLogo" src="Images/Education/Logo_LCFE.jpeg" />
+                </div>
+                <div>
+                    <p class="textEdu"><b>Location:</b> Limerick-Ireland</p>
+                    <p class="textEdu"><b>Website: </b><a class="decoratedLink" href="http://www.lcfe.ie/">www.lcfe.ie</a></p>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <div class="instDetailsLeft">
+                        <div class="text-justify instDescription">
+                            As computer programming became a very important matter for me and caught a lot of my attention (it
+                            stopped from being just a hobby, but became a new passion instead), the necesity of getting involved
+                            into formal education was undeniable.<br />
+                            Therefore, I must find a course which would be able to fulfill my interests and expectations within a
+                            reasonable timeframe.<br />
+                            The computer programming for beginers course offered by LCFE is considered as an introduction to structured
+                            programming by learning Java programming language and the use of Eclipse IDE.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img class="img-fluid mx-auto d-block rounded" src="Images/Education/LCFE.jpeg" width="550" height="450" />
+                </div>
+            </div>
+            <h3 style="margin-top:30px">Institute of Technology Sligo (ITSligo)</h3>
+            <div class="d-sm-flex flex-sm-row align-items-center">
+                <div>
+                    <img class="instLogo" src="Images/Education/Logo_ITSligo.png" />
+                </div>
+                <div>
+                    <p class="textEdu"><b>Location:</b>Sligo-Ireland</p>
+                    <p class="textEdu"><b>Website: </b><a class="decoratedLink" href="https://www.itsligo.ie/">www.itsligo.ie</a></p>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6">
+                    <img class="img-fluid mx-auto d-block rounded" src="Images/Education/ITSligo.jpeg" width="550" height="450" />
+                </div>
+                <div class="col-md-6">
+                    <div class="instDetailsLeft">
+                        <div class="text-justify instDescription">
+                            Motivated by my interest in computer programming and the ilusion of becoming a genuine, real world programmer;
+                            I started to do some research regarding third level education programmes in Computing. After some google search and a lucky strike,
+                            I found  a new program that had been offered by IT Sligo since 2014,
+                            which met the flexibility and the pensum I had been looking for.
+                            This academic program is part of the <a class="font-weight-bold" style="color:orange" href="https://springboardcourses.ie/">Springboard+</a> initiative (run by the Higher Education Authority) which is aimed at offering courses,
+                            degrees and masters in areas with job opportunities within the Irish economy.
+                            In this particular case, a conversion program is offered to include professionals from other areas into the Information and Communication Technology sector.
+                            Software and web development, database management, server set up and maintenance, computer architecture and secure converged networking
+                            are some of the modules this Level 8 degree is made up of.
+                            I finished this higher diploma in 2016 with outstanding results achieving a first class honours award, and even better, obtaining
+                            a qualification that has led me to a computing related job with Optel Group.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <article id="UNIMET" class="instArticle">
-            <img class="imgLeft" src="UNIMET2.jpeg" style="margin-top:100px"/>
-            <div class="instDetails">
-                <h1>Universidad Metropolitana (UNIMET)</h1>
-                <img class="instLogo" src="Logo_UNIMET1.png"/>
-                <p class="textEdu"><b>Location: </b>Caracas-Venezuela</p>
-                <p class="textEdu"><b>Website: </b><a class="decoratedLink" href="http://www.unimet.edu.ve/">www.unimet.edu.ve</a></p>
-                <br />
-                <div class="instDescription">
-                    In 2008, a new opportunity showed up. I made the decision to boost up my professional career in Toyota
-                    by taking up a Master degree in Management Engineering, which perfectly matched my needs within the organization.<br />
-                    The Universidad Metropolitana is a well known College in Caracas with strong pensums in managerial programs.<br />
-                    The Master in Management Engineering offered by the Universidad Metropolitana is addressed to professionals from different engineering branches.
-                    Students are deeply introduced into the modern management style by going through concepts such as finance, human resources, strategic management,
-                    international business and economic engineering.<br />
-                    This postgraduate study aims at turning these professionals into modern-minded managers in order to effectively control production, operations,
-                    projects, logistics, and other areas within different sorts of business.
-                </div>    
-            </div>
-        </article>
-        <div class="instMedia">
-            <button id="btnUNIMET" class="btn"><b>Check this video!!!</b></button>
-            <div id="videoDivUNIMET" class="videoFrame">
-                <article>
-                    <p id="enjoy2">Enjoy this nice video!!!</p>
-                    <iframe id="videoUNIMET" class="instVideo" src="https://www.youtube.com/embed/sXt1yJi88QE"></iframe>
-                    <iframe style="display:none" width="854" height="480" src="https://www.youtube.com/embed/sXt1yJi88QE" frameborder="0" allowfullscreen></iframe>
-                </article>
-            </div>
-        </div>
-        <article id="LCFE" class="instArticle">
-            <img class="imgRight" src="LCFE.jpeg" style="margin-top:30px"/>
-            <div class="instDetailsLeft">
-                <h1>Limerick College of Further Education (LCFE)</h1>
-                <img class="instLogo" src="Logo_LCFE.jpeg"/>
-                <p class="textEdu"><b>Location: </b>Limerick-Ireland</p>
-                <p class="textEdu"><b>Website: </b><a class="decoratedLink" href="http://www.lcfe.ie/">www.lcfe.ie</a></p>
-                <br />
-                <div class="instDescription">
-                    As computing programming became a very important matter within my life (it
-                    stopped from being just a hobby, but became a new passion instead), the necesity to get involved
-                    into formal education was undeniable.<br />
-                    The computer programming for beginers course offered by LCFE is considered as an itroduction to structured
-                    programming by learning Java programming language and the use of Eclipse IDE.
-                </div>
-
-            </div>
-        </article>
-        <article id="ITSligo" class="instArticle">
-            <img class="imgLeft" src="ITSligo2.jpeg" style="margin-top:140px"/>
-            <div class="instDetailsRight">
-                <h1>Institute of Technology Sligo (ITSligo)</h1>
-                <img class="instLogo" src="Logo_ITSligo.png" />
-                <p class="textEdu"><b>Location: </b>Sligo-Ireland</p>
-                <p class="textEdu"><b>Website: </b><a class="decoratedLink" href="https://www.itsligo.ie/">www.itsligo.ie</a></p>
-                <br />
-                <div class="instDescription">
-                    Motivated by my interest in computer programming and the ilusion of becoming a genuine, real world programmer;
-                    I started to do some research regarding third level education programmes in Computing.<br />
-                    After some google search and a lucky strike, I found  a new program that had been offered by IT Sligo since 2014,
-                    which met the flexibility and the pensum I had been looking for.<br />
-                    This academic program is part of the Springboard+ initiative (run by the Higher Education Authority) which is aimed at offering courses,
-                    degrees and masters in areas with job opportunities within the Irish economy.<br />
-                    In this particular case, a conversion program is offered to include professionals from other areas into the Information and Communication Technologies sector.<br />
-                    Software and web development, database management, server set up and maintenance, computer architecture and secure converged networking
-                    are some of the modules this Level 8 degree is made up of.<br/>
-                    I finished this higher diploma in 2016 with outstanding results achieving a first class honours award, and even better, obtaining
-                    a qualification that has led me to a computing related job with Optel Group.
-                </div>
-            </div>
-            
-        </article>
-        <footer>
+        <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0; margin-top:10px">
             <div class="footerWrapper">
-                <h1 id="footerHead">Visit jlrod's social network!</h1>
+                <h3 id="footerHead">Visit jlrod's social media!</h3>
                 <div class="social-networks">
-                    <a id="aFacebook" href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="facebook.png" class="social-network-icon" /></a>
-                    <a id="aInstagram" href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="instagram.png" class="social-network-icon" /></a>
-                    <a id="aGooglePlus" href="https://plus.google.com/109593661578426784429"><img id="googlePlus" src="googleplus.png" class="social-network-icon" /></a>
-                    <a id="aLinkedIn" href="https://www.linkedin.com/in/jos%C3%A9-leonardo-rodr%C3%ADguez-3069a55b?trk=nav_responsive_tab_profile"><img id="linkedIn" src="linkedin.png" class="social-network-icon" /></a>
-                    <a id="aGitHub" href="https://github.com/jlrods"><img id="gitHub" src="github.png" class="social-network-icon" /></a>
+                    <a id="aFacebook" href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="Images/SocialMedia/Facebook.png" class="social-network-icon" /></a>
+                    <a id="aInstagram" href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="Images/SocialMedia/Instagram.png" class="social-network-icon" /></a>
+                    <!--<a id="aGooglePlus" href="https://plus.google.com/109593661578426784429"><img id="googlePlus" src="googleplus.png" class="social-network-icon" /></a>-->
+                    <a id="aLinkedIn" href="https://www.linkedin.com/in/jos%C3%A9-leonardo-rodr%C3%ADguez-3069a55b?trk=nav_responsive_tab_profile"><img id="linkedIn" src="Images/SocialMedia/LinkedIn.png" class="social-network-icon" /></a>
+                    <a id="aGitHub" href="https://github.com/jlrods"><img id="gitHub" src="Images/SocialMedia/GitHub.png" class="social-network-icon" /></a>
                 </div>
             </div>
-        </footer>
+            <div class="d-flex justify-content-end">
+                <p class="text-secondary copyRight">© CopyRight 2019.<br />-All rights reserved.</p>
+            </div>
+        </div>
     </div>
+     
     
-    
-    <!-- Modules -->
-    <script src="MenuApp.js"></script>
-    <!-- Controllers -->
-    <script src="MenuAppController.js"></script>
-    <!-- Directives -->
-    <script src="menuItem.js"></script>
-    <!--Interactive Social Media script-->
-    <script type='text/javascript' src="Interactive-SocialNetworks.js"></script>
     <!-- Interactive media within education html-->
-    <script type='text/javascript' src="Interactive-Education.js"></script>
+    <script type='text/javascript' src="JS/Interactive-Education.js"></script>
 </body>
 </html>
