@@ -25,5 +25,5 @@ $(document).ready(function () {
         $("#videoDivUNIMET").slideToggle('slow');
     });
 
-    $('[data-toggle="tooltip"]').tooltip(); 
+    $('[data-toggle="popover"]').popover(); 
 });
