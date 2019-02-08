@@ -1,0 +1,149 @@
+﻿.instLogo {
+    max-height:400px;
+    max-width: 290px;
+}
+
+.companyImage {
+    max-height:400px;
+}
+
+.empDetails {
+    max-height: 500px;
+}
+
+.empImg {
+    max-width: 1000px;
+    max-height: 500px;
+}
+
+.scrollMenuImage {
+    width: 130px;
+    height: 90px;
+    border: double;
+    margin: 5px;
+}
+
+.scrollMenuImageBottom {
+    width: 70px;
+    height: 48px;
+    border: double;
+}
+
+.scrollMenuImageMedium {
+    width: 90px;
+    height: 62px;
+    border: double;
+    margin: 5px;
+}
+
+/*.scrollMenuImageBottom div {
+        margin: 10px;
+        position: absolute;
+    }*/
+.scrollMenuLeft {
+    overflow: auto;
+    padding: 10px;
+    width: 200px;
+    height: 310px;
+}
+
+.scrollMenuLeftMD {
+    overflow: auto;
+    padding: 10px;
+    width: 200px;
+    max-height: 300px;
+}
+
+.scrollMenuBottom {
+    /*position: relative;*/
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 215px;
+}
+
+.textEdu {
+    text-align: left;
+    color: darkorange;
+    margin: 0;
+}
+
+#OptelLogoLG {
+    max-height: 275px; 
+    max-width: 200px;
+}
+
+#OptelLogoSM {
+    max-height: 170px;
+    max-width: 130px;
+}
+
+#FHLogoLG {
+    max-height: 200px;
+    max-width: 500px;
+}
+
+#FHLogoSM {
+    max-height: 200px;
+    max-width: 290px;
+}
+
+#FHSection {
+    margin-top: 30px;
+}
+
+#AdeminsaSection {
+    margin-top: 30px;
+}
+
+#MLDNSection {
+    margin-top: 30px;
+}
+
+#ToyotaLogoLG {
+    max-height: 225px;
+    max-width: 225px;
+}
+#ToyotaLogoSM {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+#AdeminsaLogoLG {
+    max-height: 225px;
+    max-width: 225px;
+}
+
+#AdeminsaLogoSM {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+#MLDNLogoLG {
+    max-height: 180px;
+    max-width: 180px;
+    margin-right: 15px;
+}
+
+#MLDNLogoSM {
+    max-height: 85px;
+    max-width: 85px;
+    margin-right: 10px;
+}
+
+#resumeBoxLeft {
+    position: fixed;
+    top: 250px;
+    left: 20px;
+    width: 170px;
+    height: 150px;
+    padding: 5px
+}
+
+#resumeBoxBottom {
+    margin-top: 30px;
+    width: 300px;
+    height: 110px;
+    padding:5px
+}
+
+
