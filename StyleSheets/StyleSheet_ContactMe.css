@@ -1,0 +1,12 @@
+﻿h1, h2 {
+    color:orange
+}
+
+#gmailLogo {
+    max-width:290px;
+}
+
+#skypeLogo {
+    margin-top:30px;
+    max-width: 140px;
+}

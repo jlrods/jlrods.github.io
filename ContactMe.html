@@ -3,50 +3,83 @@
 <head>
     <title>www.jlrods.com</title>
     <meta charset="utf-8" />
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
-    <link rel="stylesheet" type="text/css" href="StyleSheet_Main.css" />
-    <link rel="stylesheet" type="text/css" href="StyleSheet_ContactMe.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="StyleSheets/StyleSheet_Main.css" />
+    <link rel="stylesheet" type="text/css" href="StyleSheets/StyleSheet_ContactMe.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
-<body ng-app="menuApp">
-    <header ng-controller="MenuController">
-        <div class="menu" ng-include src="url"></div>
+<body>
+    <header>
+        <div class="" page-header"">
+            <img id="headImage" class="img-responsive" src="Images/Header.png" style="min-height: 80px; max-height: 150px; width: 100%" />
+        </div>
     </header>
-    <div class="body-wrapper">
+    <nav class="navbar navbar-expand-md sticky-top bg-dark navbar-dark ">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar ">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+            <ul class="navbar-nav justify-content-center">
+                <li class="nav-item menuItem">
+                    <a class="nav-link" href="index.html"><i class='fas fa-home menuIcon'></i>Home</a>
+                </li>
+                <li class="nav-item menuItem">
+                    <a class="nav-link" href="Education.html"><i class='fas fa-user-graduate menuIcon'></i>Education</a>
+                </li>
+                <li class="nav-item menuItem">
+                    <a class="nav-link" href="Career.html"><i class='fas fa-laptop menuIcon'></i>Career</a>
+                </li>
+                <li class="nav-item menuItem">
+                    <a class="nav-link" href="MyInterests.html"><i class='fab fa-pinterest menuIcon'></i>Interests</a>
+                </li>
+                <li class="nav-item menuItem">
+                    <a class="nav-link" href="ContactMe.html"><i class='fas fa-envelope menuIcon'></i>Contact me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="body-wrapper" class="container text-center">
         <h1 id="ContactHeader">Contact deatils:</h1>
-        <table id="email">
-            <tr>
-                <td><img src="gmail.gif" width="330" height="250"/></td>
-                <td><h2><b>Send an Email to:</b></h2></td>
-                <td><a href="mailto:jlrods@gmail.com"><b>jlrods@gmail.com</b></a></td>
-            </tr>
-        </table>
-        <!--<h2>Contact form:</h2>
-        <table id="message">
-            <tr><td><input id="ContactText" type="text" value="Type your message here!" onfocus="Clear(this.value)"/></td></tr>
-            <tr align="center"><td><input type="submit" value="Send message" style="font-weight:bold" onclick="SendMessage(this.value)"/></td></tr>
-        </table>-->   
-        <footer>
-            <h1 id="footerHead">Visit jlrod's social network!</h1>
-            <div class="social-networks">
-                <a id="aFacebook" href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="facebook.png" class="social-network-icon" /></a>
-                <a id="aInstagram" href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="instagram.png" class="social-network-icon" /></a>
-                <a id="aGooglePlus" href="https://plus.google.com/109593661578426784429"><img id="googlePlus" src="googleplus.png" class="social-network-icon" /></a>
-                <a id="aLinkedIn" href="https://www.linkedin.com/in/jos%C3%A9-leonardo-rodr%C3%ADguez-3069a55b?trk=nav_responsive_tab_profile"><img id="linkedIn" src="linkedin.png" class="social-network-icon" /></a>
-                <a id="aGitHub" href="https://github.com/jlrods"><img id="gitHub" src="github.png" class="social-network-icon" /></a>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img id="gmailLogo" src="Images/ContacMe/gmail.gif" class="img-fluid mx-auto d-block contactLogo"/>
+                </div>
+                <div class="col-md-6">
+                    <h2><b>Send an Email to:</b></h2>
+                    <a href="mailto:jlrods@gmail.com"><b>jlrods@gmail.com</b></a>
+                </div>
             </div>
-        </footer>
+            <div class="row align-items-center" style="margin-bottom:20px">
+                <div class="col-md-6">
+                    <img id="skypeLogo" src="Images/ContacMe/skype.gif" class="img-fluid mx-auto d-block contactLogo" />
+                </div>
+                <div class="col-md-6">
+                    <h2><b>Text me on Skype:</b></h2>
+                    <a href="skype:jlrods1?chat"><b>jlrods1</b></a>
+                </div>
+            </div>
+        </div>        
     </div>
-    <!-- Modules -->
-    <script src="MenuApp.js"></script>
-    <!-- Controllers -->
-    <script src="MenuAppController.js"></script>
-    <!-- Directives -->
-    <script src="menuItem.js"></script>
-    <!--Interactive Social Media script-->
-    <script type='text/javascript' src="Interactive-SocialNetworks.js"></script>
-    <script type='text/javascript' src="SendMessage.js"></script>
+    <div class="jumbotron jumbotron-fluid text-center" style="margin-bottom:0; margin-top:10px">
+        <div class="footerWrapper">
+            <h3 id="footerHead" class="text-dark">Visit jlrod's social media!</h3>
+            <div class="social-networks">
+                <a id="aFacebook" href="https://www.facebook.com/joseleonardo.rodriguezrodriguez.94?"><img id="facebook" src="Images/SocialMedia/Facebook.png" class="social-network-icon" /></a>
+                <a id="aInstagram" href="https://www.instagram.com/jlrods/?hl=en"><img id="instagram" src="Images/SocialMedia/Instagram.png" class="social-network-icon" /></a>
+                <!--<a id="aGooglePlus" href="https://plus.google.com/109593661578426784429"><img id="googlePlus" src="googleplus.png" class="social-network-icon" /></a>-->
+                <a id="aLinkedIn" href="https://www.linkedin.com/in/jos%C3%A9-leonardo-rodr%C3%ADguez-3069a55b?trk=nav_responsive_tab_profile"><img id="linkedIn" src="Images/SocialMedia/LinkedIn.png" class="social-network-icon" /></a>
+                <a id="aGitHub" href="https://github.com/jlrods"><img id="gitHub" src="Images/SocialMedia/GitHub.png" class="social-network-icon" /></a>
+            </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <p class="text-secondary copyRight">© CopyRight 2019.<br />-All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
